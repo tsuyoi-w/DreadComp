@@ -10,3 +10,9 @@
 [submodule "tools/common"]
 	path = tools/common
 	url = https://github.com/open-ead/nx-decomp-tools
+[submodule "toolchains/nx-decomp-tools-binaries"]
+	path = toolchains/nx-decomp-tools-binaries
+	url = https://github.com/open-ead/nx-decomp-tools-binaries
+[submodule "toolchains/musl"]
+	path = toolchains/musl
+	url = https://github.com/open-ead/botw-lib-musl
