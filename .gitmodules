@@ -7,3 +7,6 @@
 [submodule "lib/sead"]
 	path = lib/sead
 	url = https://github.com/open-ead/sead
+[submodule "tools/common"]
+	path = tools/common
+	url = https://github.com/open-ead/nx-decomp-tools
