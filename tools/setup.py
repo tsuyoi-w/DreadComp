@@ -78,12 +78,15 @@ def main():
                         help="Path to the original NSO (2.1.0, compressed or not)", nargs="?")
     parser.add_argument("--project-only", action="store_true",
                     help="Disable original NSO setup")
+    parser.add_argument("--build-only", action="store_true",
+                    help="Disable original NSO setup")
     args = parser.parse_args()
 
-    setup.install_viking()
-    if not args.project_only:
-        prepare_executable(args.original_nso)
-    setup.set_up_compiler("4.0.1")
+    if not args.build_only:
+        setup.install_viking()
+        if not args.project_only:
+            prepare_executable(args.original_nso)
+        setup.set_up_compiler("10.0.0") #TODO: Find Clang version between 9.0.0 and 11.0.0 maybe? (12.0.0 max)
     create_build_dir()
     
 if __name__ == "__main__":

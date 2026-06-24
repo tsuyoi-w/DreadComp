@@ -16,7 +16,7 @@ __pycache__/
 dist/
 build/
 bin/
-game/*
+Extract/*
 
 # IDEs
 .idea/
@@ -44,10 +44,11 @@ perf.data.old
 .gdb_history
 
 # Tooling
-/toolchain/clang-*
+/toolchain/clang*
 tools/check
 tools/listsym
 tools/decompme
+tools/scripts
 
 docs/build
 

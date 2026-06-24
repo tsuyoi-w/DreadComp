@@ -81,6 +81,23 @@ It probably won’t be necessary in the future (!soon). I plan to make an objdif
 
 you can follow [ghidra setup](ghidra.md) guide
 
+## Setup VScode
+
+You'll need the following extensions:
+
+- python
+- ASM Code Lens
+- Clangd or C/C++ Extension pack
+- Clang-Format
+
+i also suggest:
+
+- Todo Tree
+- Better Comments
+- A theme you like (i use tokyo night or dark 2026)
+
+Next you need some settings you can do it by copy/pasting both .json to a .vscode folder
+
 ## Contributing
 
 A work in progress, but [CONTRIBUTING.md](Contributing.md) has guidelines for how to contribute to the project
