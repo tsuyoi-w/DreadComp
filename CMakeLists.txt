@@ -13,7 +13,6 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
   # Required to fix source paths in debug info when using distcc
   add_compile_options(-fdebug-prefix-map=/tmp=${CMAKE_CURRENT_BINARY_DIR})
 endif()
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -21,8 +20,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 file(GLOB_RECURSE SOURCES_GAME CONFIGURE_DEPENDS 
 ${PROJECT_SOURCE_DIR}/src/*.cpp ${PROJECT_SOURCE_DIR}/src/*.c 
 ${PROJECT_SOURCE_DIR}/src/*.hpp ${PROJECT_SOURCE_DIR}/src/*.h)
-
-add_executable(dread ${SOURCES_GAME})
+add_library(dread OBJECT ${SOURCES_GAME})
 target_include_directories(dread PRIVATE "includes/")
 target_compile_definitions(dread PRIVATE NON_MATCHING)
 target_compile_options(dread PRIVATE -fno-rtti -fno-exceptions)
@@ -42,7 +40,7 @@ add_subdirectory("lib/agl")
 
 add_subdirectory("lib/sead")
 
-target_link_libraries(dread PUBLIC
+target_link_libraries(dread PRIVATE
     sead
     NintendoSDK
     agl
