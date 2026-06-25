@@ -3,6 +3,7 @@ capstone==5.0.9
 colorama==0.4.6
 cxxfilt==0.3.0
 Levenshtein==0.27.3
+ninja==1.13.0
 pyelftools==0.33
 python-Levenshtein==0.27.3
 RapidFuzz==3.14.5

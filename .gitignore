@@ -55,6 +55,3 @@ docs/build
 # Other
 Note.txt
 !Extract/*.md
-tools/c_setup.py
-tools/objdiff.py
-project.py

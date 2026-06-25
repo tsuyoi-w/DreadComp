@@ -1,6 +1,5 @@
-//! he is just here to avoid errors in the setup.py
+#include "detail/aglFileIOMgr.h"
 
 int main()
 {
-    return 0;
 }

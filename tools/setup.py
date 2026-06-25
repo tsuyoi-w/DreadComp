@@ -18,12 +18,12 @@ import objdiff as obj
 ROOT = Path(__file__).parent.parent
 TARGET_PATH = ROOT / 'data' / 'main.nso'
 TARGET_ELF_PATH = ROOT / 'data' / 'main.elf'
-
 TOOL_ROOT = ROOT / 'toolchain'
 
+SYSTEM = 'linux' if platform.system() == 'Linux' else 'macos' 
 
 def _convert_nso_to_elf(nso_path: Path, elf_out_path = TARGET_ELF_PATH, uncompressed_nso_out_path = TARGET_PATH):
-    NX2ELF = TOOL_ROOT / 'nx-decomp-tools-binaries' / 'linux' / 'nx2elf'
+    NX2ELF = TOOL_ROOT / 'nx-decomp-tools-binaries' / SYSTEM / 'nx2elf'
     print(">>>> converting NSO to ELF...")
     command = [NX2ELF, str(nso_path), "--export-elf", elf_out_path];
     if uncompressed_nso_out_path is not None:
@@ -32,7 +32,7 @@ def _convert_nso_to_elf(nso_path: Path, elf_out_path = TARGET_ELF_PATH, uncompre
     subprocess.check_call(command)
 
 def _decompress_nso(nso_path: Path, dest_path: Path):
-    HACTOOL = TOOL_ROOT / 'nx-decomp-tools-binaries' / 'linux' / 'hactool'
+    HACTOOL = TOOL_ROOT / 'nx-decomp-tools-binaries' / SYSTEM / 'hactool'
     print(">>>> decompressing NSO...")
     subprocess.check_call([HACTOOL, "-tnso",
                            "--uncompressed=" + str(dest_path), str(nso_path)])
@@ -201,9 +201,10 @@ def main():
         clean()
 
     if not args.build_only:
+        #TODO: obj.generate_objdiff_config()
         if not args.project_only:
             prepare_executable(args.original_nso)
-        set_up_compiler("10.0.0") #TODO: Find Clang version between 9.0.0 and 11.0.0 maybe? (12.0.0 max)
+        set_up_compiler("10.0.0") #TODO: Find Clang version between 9.0.0 and 11.0.0 max maybe?
     create_build_dir()
     
 if __name__ == "__main__":
