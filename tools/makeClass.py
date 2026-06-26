@@ -10,7 +10,7 @@ BUILD = ROOT / 'build' / 'src'
 
 CODE = Path("./data/main.nso").read_bytes()
 
-func: list[str] = ['.section .text\n.global {name}\n\n{name}:\n']
+func: list[str] = ['\n\n.global {name}\n\n{name}:\n']
 
 md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
 md.skipdata = True
@@ -33,12 +33,21 @@ with open(ROOT / 'data/rom_extract.csv', newline='', encoding='utf-8') as f:
             FunctionList.append(Function(adress, size, symbol))
 
 for fn in FunctionList:
-    data = CODE[fn.adress:fn.adress + size]
+    func_str: str = ""
+    data = CODE[fn.adress:fn.adress + fn.size]
+    if Path(BUILD / str(fn.namespace+'.s')).exists():
+        with open(BUILD / str(fn.namespace+'.s'), 'r') as f:
+            func_str = f.read()
+    else:
+        func.append('.section .text\n')
+        func.reverse()
     for i in md.disasm(data, fn.adress):
         func.append(f"\t{i.mnemonic} {i.op_str}\n")
-    func_str: str = "".join(func)
+    copy = "".join(func)
+    func_str += copy
     func_str = func_str.replace('{name}', fn.name)
     func_str = func_str.replace('#', "")
+    func = ['\n\n.global {name}\n\n{name}:\n']
     with open(BUILD / str(fn.namespace+'.s'), 'w') as f:
         f.write(func_str)
     
