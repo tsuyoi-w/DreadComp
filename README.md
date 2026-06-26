@@ -4,9 +4,9 @@
 [actions]: #
 [Progress]: #
 [decomp.dev]: #
-[discord]: #
+[discord]: discord.com/invite/vFmzAXR8FF
 
-**Work in progress!** This project aims to recreate source code for **_Metroid Dread_** by decompiling its code by hand. **The repository does not contain assets or assembly code.** To build the ROM, you must own an existing copy of the game to extract assets from. For more information you can get in touch with me on discord : **tsuy0i**.
+**Work in progress!** This project aims to recreate source code for **_Metroid Dread_** by decompiling its code by hand. **The repository does not contain assets or assembly code.** To build the ROM, you must own an existing copy of the game to extract assets from. For more information join the [discord][discord].
 
 For now dont follow this, you can read [CONTRIBUTING.md](docs/Contributing.md) if you want to see what to do
 
