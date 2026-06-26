@@ -204,7 +204,7 @@ def main():
         #TODO: obj.generate_objdiff_config()
         if not args.project_only:
             prepare_executable(args.original_nso)
-        set_up_compiler("10.0.0") #TODO: Find Clang version between 9.0.0 and 11.0.0 max maybe?
+        set_up_compiler("9.0.0")
     create_build_dir()
     
 if __name__ == "__main__":

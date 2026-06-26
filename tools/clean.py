@@ -16,7 +16,7 @@ Path_array: list[Path] = [
     ROOT / 'build',
     ROOT / 'data' / 'main.nso',
     ROOT / 'data' / 'main.elf',
-    ROOT / 'toolchain' / 'clang-10.0.0'
+    ROOT / 'toolchain' / 'clang-9.0.0'
 ]
 
 def clean():

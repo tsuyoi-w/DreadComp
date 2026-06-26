@@ -1,7 +1,7 @@
 if (DEFINED ENV{DREAD_CLANG})
     set(DREAD_CLANG "$ENV{DREAD_CLANG}")
 else()
-    set(DREAD_CLANG "${CMAKE_CURRENT_LIST_DIR}/clang-10.0.0")
+    set(DREAD_CLANG "${CMAKE_CURRENT_LIST_DIR}/clang-9.0.0")
 endif()
 
 set(NX64_OPT_FLAGS "-O3 -g")

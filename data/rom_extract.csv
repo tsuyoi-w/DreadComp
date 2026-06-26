@@ -1,6 +1,5 @@
-290,24,Actor::FUN_7100000190,true
-350,80,FUN_7100000250,false
-3d0,8,FUN_71000002d0,false
+290,24,FUN_7100000190,false
+350,88,FUN_7100000250,false
 3e0,4,__nnDetailNintendoSdkRuntimeObjectFileRefer,false
 3f0,c0,FUN_71000002f0,false
 4b0,c,nndetailRoGetRoDataStart,false
