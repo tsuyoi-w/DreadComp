@@ -28,4 +28,6 @@ void ActorUnk_001::vfunc_10() {
 }
 void ActorUnk_001::vfunc_18() {}
 void ActorUnk_001::vfunc_20() {}
-void ActorUnk_001::vfunc_28() {}
+long ActorUnk_001::vfunc_28() {
+    return this->mUnk_10;
+}
