@@ -601,18 +601,18 @@ fe7c,1e0,FUN_710000fd7c,false
 66730,c,FUN_7100066630,false
 6673c,38,FUN_710006663c,false
 66774,20,FUN_7100066674,false
-66794,4,FinalizeLightEvent,false
-66798,4,SignalLightEvent,false
-6679c,4,WaitLightEvent,false
+66794,4,<EXTERNAL>::nn::os::FinalizeLightEvent,false
+66798,4,<EXTERNAL>::nn::os::SignalLightEvent,false
+6679c,4,<EXTERNAL>::nn::os::WaitLightEvent,false
 667a0,10,FUN_71000666a0,false
 66844,e4,FUN_7100066744,false
 66928,2c,FUN_7100066828,false
 66954,10,FUN_7100066854,false
 6696c,8c,FUN_710006686c,false
 669f8,20,FUN_71000668f8,false
-66a18,4,FinalizeMutex,false
-66a1c,4,LockMutex,false
-66a20,4,UnlockMutex,false
+66a18,4,<EXTERNAL>::nn::os::FinalizeMutex,false
+66a1c,4,<EXTERNAL>::nn::os::LockMutex,false
+66a20,4,<EXTERNAL>::nn::os::UnlockMutex,false
 66a30,70,FUN_7100066930,false
 66aa0,74,FUN_71000669a0,false
 66b14,1c,FUN_7100066a14,false
@@ -689,7 +689,7 @@ fe7c,1e0,FUN_710000fd7c,false
 6bc80,c4,FUN_710006bb80,false
 6bd44,38,FUN_710006bc44,false
 6bd7c,2c,FUN_710006bc7c,false
-6bdb0,2e8,operator==,false
+6bdb0,2e8,nn::time::operator==,false
 6c098,c,FUN_710006bf98,false
 6c0a4,8,FUN_710006bfa4,false
 6c0ac,18,FUN_710006bfac,false
@@ -991,7 +991,16 @@ fe7c,1e0,FUN_710000fd7c,false
 81140,68,FUN_7100081040,false
 811b0,10,FUN_71000810b0,false
 811c0,c,FUN_71000810c0,false
-811cc,84,FUN_71000810cc,false
+811cc,84,ActorUnk_001::ActorUnk_001,true
+81250,48,ActorUnk_001::ActorUnk_001,true
+81298,48,ActorUnk_001::~ActorUnk_001,true
+812e0,34,ActorUnk_001::vfunc_08,true
+81314,64,ActorUnk_001::vfunc_30,true
+81378,10,ActorUnk_001::vfunc_00,true
+81388,c,ActorUnk_001::vfunc_10,true
+81394,8,ActorUnk_001::vfunc_18,true
+8139c,8,ActorUnk_001::vfunc_20,true
+813a4,8,ActorUnk_001::vfunc_28,true
 813ac,58,FUN_71000812ac,false
 81404,24,FUN_7100081304,false
 81428,4,FUN_7100081328,false
@@ -26715,24 +26724,24 @@ b7982c,b0,FUN_7100b7972c,false
 b79c74,f4,FUN_7100b79b74,false
 b79d6c,160,FUN_7100b79c6c,false
 b79ff8,ff8,FUN_7100b79ef8,false
-b7aff0,8c,~stringstream,false
+b7aff0,8c,std::stringstream (GhidraClass)::~stringstream,false
 b7b07c,c4,FUN_7100b7af7c,false
 b7b140,1c,FUN_7100b7b040,false
-b7b15c,8c,~stringstream,false
-b7b1e8,94,~stringstream,false
-b7b27c,94,~stringstream,false
-b7b310,94,~stringstream,false
-b7b3a4,9c,~stringstream,false
-b7b440,40,~stringbuf,false
-b7b480,48,~stringbuf,false
-b7b4c8,128,seekoff,false
-b7b604,50,underflow,false
-b7b654,70,pbackfail,false
-b7b6c4,180,overflow,false
+b7b15c,8c,std::stringstream (GhidraClass)::~stringstream,false
+b7b1e8,94,std::stringstream (GhidraClass)::~stringstream,false
+b7b27c,94,std::stringstream (GhidraClass)::~stringstream,false
+b7b310,94,std::stringstream (GhidraClass)::~stringstream,false
+b7b3a4,9c,std::stringstream (GhidraClass)::~stringstream,false
+b7b440,40,std::stringbuf (GhidraClass)::~stringbuf,false
+b7b480,48,std::stringbuf (GhidraClass)::~stringbuf,false
+b7b4c8,128,std::stringbuf (GhidraClass)::seekoff,false
+b7b604,50,std::stringbuf (GhidraClass)::underflow,false
+b7b654,70,std::stringbuf (GhidraClass)::pbackfail,false
+b7b6c4,180,std::stringbuf (GhidraClass)::overflow,false
 b7b854,1c,FUN_7100b7b754,false
-b7b8c0,110,__put_character_sequence<char,std::char_traits<char>>,false
+b7b8c0,110,std::__put_character_sequence<char,std::char_traits<char>>,false
 b7b9d0,168,FUN_7100b7b8d0,false
-b7bb38,1e8,str,false
+b7bb38,1e8,std::stringbuf (GhidraClass)::str,false
 b7bd24,f4,FUN_7100b7bc24,false
 b7be1c,160,FUN_7100b7bd1c,false
 b7c698,b0,FUN_7100b7c598,false
@@ -42536,7 +42545,7 @@ ffff60,130,FUN_7100fffe60,false
 120ccd4,10c,FUN_710120cbd4,false
 120cfdc,d8,FUN_710120cedc,false
 120d0b4,10c,FUN_710120cfb4,false
-120d1c0,4,GetFirstBlock,false
+120d1c0,4,<EXTERNAL>::nn::util::BinaryFileHeader::GetFirstBlock,false
 120d1c4,c,FUN_710120d0c4,false
 120d1d0,2c,FUN_710120d0d0,false
 120d1fc,c,FUN_710120d0fc,false
@@ -43387,433 +43396,433 @@ ffff60,130,FUN_7100fffe60,false
 1238d14,d4,FUN_7101238c14,false
 1238de8,c,FUN_7101238ce8,false
 1238df4,60,FUN_7101238cf4,false
-1238e80,d,__nnmusl_init_dso,false
-1238e90,d,strlen,false
-1238ea0,d,__cxa_guard_acquire,false
-1238eb0,d,__cxa_guard_release,false
-1238ec0,d,GetHostArgc,false
-1238ed0,d,GetHostArgv,false
-1238ee0,d,srand,false
-1238ef0,d,memset,false
-1238f00,d,memcpy,false
-1238f10,d,__release_weak,false
-1238f20,d,abort,false
-1238f30,d,~__shared_weak_count,false
-1238f40,d,acosf,false
-1238f50,d,sqrtf,false
-1238f60,d,fmodf,false
-1238f70,d,GetState,false
-1238f80,d,InitializeEvent,false
-1238f90,d,TryWaitEvent,false
-1238fa0,d,DestroySystemEvent,false
-1238fb0,d,ClearSystemEvent,false
-1238fc0,d,TimedWaitSystemEvent,false
-1238fd0,d,TryWaitSystemEvent,false
-1238fe0,d,memcmp,false
-1238ff0,d,FinalizeEvent,false
-1239000,d,Initialize,false
-1239010,d,Finalize,false
-1239020,d,ListDevices,false
-1239030,d,GetNpadId,false
-1239040,d,AttachActivateEvent,false
-1239050,d,AttachDeactivateEvent,false
-1239060,d,StartDetection,false
-1239070,d,StopDetection,false
-1239080,d,Mount,false
-1239090,d,SleepThread,false
-12390a0,d,Unmount,false
-12390b0,d,CreateApplicationArea,false
-12390c0,d,OpenApplicationArea,false
-12390d0,d,GetApplicationArea,false
-12390e0,d,SetApplicationArea,false
-12390f0,d,Flush,false
-1239100,d,Restore,false
-1239110,d,GetTagInfo,false
-1239120,d,GetRegisterInfo,false
-1239130,d,GetCommonInfo,false
-1239140,d,GetModelInfo,false
-1239150,d,StartNicknameAndOwnerSettings,false
-1239160,d,StartGameDataEraser,false
-1239170,d,StartRestorer,false
-1239180,d,GetDeviceState,false
-1239190,d,AttachAvailabilityChangeEvent,false
-12391a0,d,CreateThread,false
-12391b0,d,StartThread,false
-12391c0,d,AbortImpl,false
-12391d0,d,AbortImpl,false
-12391e0,d,WaitEvent,false
-12391f0,d,SignalEvent,false
-1239200,d,GetSystemTick,false
-1239210,d,ConvertToTimeSpan,false
-1239220,d,WaitThread,false
-1239230,d,DestroyThread,false
-1239240,d,ClearEvent,false
-1239250,d,CreateDirectory,false
-1239260,d,CommitSaveData,false
-1239270,d,OpenDirectory,false
-1239280,d,CloseDirectory,false
-1239290,d,DeleteFile,false
-12392a0,d,DeleteDirectory,false
-12392b0,d,ReadDirectory,false
-12392c0,d,strcpy,false
-12392d0,d,OpenFile,false
-12392e0,d,GetFileSize,false
-12392f0,d,CloseFile,false
-1239300,d,ReadFile,false
-1239310,d,CreateFile,false
-1239320,d,WriteFile,false
-1239330,d,SetFileSize,false
-1239340,d,InitializeLightEvent,false
-1239350,d,FinalizeLightEvent,false
-1239360,d,SignalLightEvent,false
-1239370,d,WaitLightEvent,false
-1239380,d,TimedWaitLightEvent,false
-1239390,d,ClearLightEvent,false
-12393a0,d,SetThreadCoreMask,false
-12393b0,d,InitializeMutex,false
-12393c0,d,FinalizeMutex,false
-12393d0,d,LockMutex,false
-12393e0,d,UnlockMutex,false
-12393f0,d,wcslen,false
-1239400,d,wcscpy,false
-1239410,d,wcscmp,false
-1239420,d,wcsstr,false
-1239430,d,ClockSnapshot,false
-1239440,d,CreateWithStandardSystemClock,false
-1239450,d,GetStandardUserSystemClockCalendarTime,false
-1239460,d,InitializeNpad,false
-1239470,d,SetSupportedNpadStyleSet,false
-1239480,d,SetSupportedNpadIdType,false
-1239490,d,GetVibrationDeviceHandles,false
-12394a0,d,InitializeVibrationDevice,false
-12394b0,d,GetVibrationDeviceInfo,false
-12394c0,d,GetNpadStyleSet,false
-12394d0,d,GetNpadState,false
-12394e0,d,GetNpadState,false
-12394f0,d,SetNpadJoyHoldType,false
-1239500,d,SetDefault,false
-1239510,d,ShowControllerSupport,false
-1239520,d,Update,false
-1239530,d,Connect,false
-1239540,d,SetVibrationDeviceHandle,false
-1239550,d,~VibrationNodeConnection,false
-1239560,d,~VibrationTarget,false
-1239570,d,~VibrationMixer,false
-1239580,d,VibrationPlayer,false
-1239590,d,VibrationNodeConnection,false
-12395a0,d,~VibrationPlayer,false
-12395b0,d,Load,false
-12395c0,d,SetLoop,false
-12395d0,d,Stop,false
-12395e0,d,SetModulation,false
-12395f0,d,Play,false
-1239600,d,GetCurrentPosition,false
-1239610,d,IsLoop,false
-1239620,d,IsPlaying,false
-1239630,d,GetFileInfo,false
-1239640,d,Unload,false
-1239650,d,OnNextSampleRequired,false
-1239660,d,strstr,false
-1239670,d,strcat,false
-1239680,d,VibrationMixer,false
-1239690,d,VibrationTarget,false
-12396a0,d,rand,false
-12396b0,d,asinf,false
-12396c0,d,cosf,false
-12396d0,d,atan2f,false
-12396e0,d,sinf,false
-12396f0,d,tanf,false
-1239700,d,strcmp,false
-1239710,d,vsnprintf,false
-1239720,d,strncpy,false
-1239730,d,tolower,false
-1239740,d,sprintf,false
-1239750,d,GetProgramTotalActiveTime,false
-1239760,d,GetCurrentThread,false
-1239770,d,printf,false
-1239780,d,strchr,false
-1239790,d,snprintf,false
-12397a0,d,InitializeAudioOutParameter,false
-12397b0,d,OpenDefaultAudioOut,false
-12397c0,d,CloseAudioOut,false
-12397d0,d,SetAudioDeviceOutputVolume,false
-12397e0,d,UnexpectedDefaultImpl,false
-12397f0,d,logf,false
-1239800,d,expf,false
-1239810,d,Finalize,false
-1239820,d,Allocate,false
-1239830,d,Free,false
-1239840,d,Reallocate,false
-1239850,d,QueryMemoryInfo,false
-1239860,d,SetMemoryHeapSize,false
-1239870,d,AllocateMemoryBlock,false
-1239880,d,Initialize,false
-1239890,d,SetGraphicsAllocator,false
-12398a0,d,InitializeGraphics,false
-12398b0,d,SetAllocator,false
-12398c0,d,QueryMountRomCacheSize,false
-12398d0,d,MountRom,false
-12398e0,d,EnterExitRequestHandlingSection,false
-12398f0,d,Initialize,false
-1239900,d,TryOpenPreselectedUser,false
-1239910,d,GetUserId,false
-1239920,d,GenerateUuid,false
-1239930,d,Initialize,false
-1239940,d,SetOperationModeChangedNotificationEnabled,false
-1239950,d,SetPerformanceModeChangedNotificationEnabled,false
-1239960,d,SetPerformanceConfiguration,false
-1239970,d,GetOperationMode,false
-1239980,d,Initialize,false
-1239990,d,Finalize,false
-12399a0,d,CloseUser,false
-12399b0,d,FinalizeGraphics,false
-12399c0,d,LeaveExitRequestHandlingSection,false
-12399d0,d,Unmount,false
-12399e0,d,TryPopNotificationMessage,false
-12399f0,d,SetUserInactivityDetectionTimeExtended,false
-1239a00,d,StandardAllocator,false
-1239a10,d,atof,false
-1239a20,d,atoi,false
-1239a30,d,GetGzipDecompressedSize,false
-1239a40,d,DecompressGzip,false
-1239a50,d,__assert_fail,false
-1239a60,d,modff,false
-1239a70,d,exit,false
-1239a80,d,Initialize,false
-1239a90,d,OpenDefaultDisplay,false
-1239aa0,d,CreateLayer,false
-1239ab0,d,GetNativeWindow,false
-1239ac0,d,nvnBootstrapLoader,false
-1239ad0,d,powf,false
-1239ae0,d,SetCpuBoostMode,false
-1239af0,d,atanf,false
-1239b00,d,OpenDefaultAudioOut,false
-1239b10,d,GetAudioOutChannelCount,false
-1239b20,d,GetAudioOutSampleFormat,false
-1239b30,d,GetSampleByteSize,false
-1239b40,d,GetAudioOutSampleRate,false
-1239b50,d,GetRequiredBufferSizeForResampler,false
-1239b60,d,InitializeResampler,false
-1239b70,d,ProcessResamplerBuffer,false
-1239b80,d,SetAudioOutBufferInfo,false
-1239b90,d,AppendAudioOutBuffer,false
-1239ba0,d,Buffer,false
-1239bb0,d,~Buffer,false
-1239bc0,d,Buffer,false
-1239bd0,d,SetRange,false
-1239be0,d,Buffer,false
-1239bf0,d,StartAudioOut,false
-1239c00,d,StopAudioOut,false
-1239c10,d,Base,false
-1239c20,d,Size,false
-1239c30,d,GetUint32Data,false
-1239c40,d,GetInt64Data,false
-1239c50,d,Capacity,false
-1239c60,d,GetReleasedAudioOutBuffer,false
-1239c70,d,GetAudioOutBufferDataPointer,false
-1239c80,d,GetAudioOutBufferDataSize,false
-1239c90,d,GetResamplerOutputSampleCount,false
-1239ca0,d,Offset,false
-1239cb0,d,SetInt64Data,false
-1239cc0,d,GetOutputBuffer,false
-1239cd0,d,SetInt32Data,false
-1239ce0,d,SetUint32Data,false
-1239cf0,d,ReleaseOutputBufferIndex,false
-1239d00,d,InitializeMultiWait,false
-1239d10,d,InitializeMultiWaitHolder,false
-1239d20,d,SetMultiWaitHolderUserData,false
-1239d30,d,LinkMultiWaitHolder,false
-1239d40,d,WaitAny,false
-1239d50,d,GetMultiWaitHolderUserData,false
-1239d60,d,UnlinkMultiWaitHolder,false
-1239d70,d,FinalizeMultiWaitHolder,false
-1239d80,d,FinalizeMultiWait,false
-1239d90,d,Buffer,false
-1239da0,d,Extractor,false
-1239db0,d,~Extractor,false
-1239dc0,d,MediaData,false
-1239dd0,d,FindString,false
-1239de0,d,FindInt32,false
-1239df0,d,FindInt64,false
-1239e00,d,Clear,false
-1239e10,d,~MediaData,false
-1239e20,d,SetAllocator,false
-1239e30,d,InitializeMessageQueue,false
-1239e40,d,TimedReceiveMessageQueue,false
-1239e50,d,FinalizeMessageQueue,false
-1239e60,d,SendMessageQueue,false
-1239e70,d,GetThreadPriority,false
-1239e80,d,Decoder,false
-1239e90,d,~Decoder,false
-1239ea0,d,RegisterClientEvents,false
-1239eb0,d,Configure,false
-1239ec0,d,Stop,false
-1239ed0,d,Start,false
-1239ee0,d,Flush,false
-1239ef0,d,GetInputBuffer,false
-1239f00,d,SendInputBufferForDecode,false
-1239f10,d,GetOutputFormat,false
-1239f20,d,GetOutputBufferFormat,false
-1239f30,d,SetNvnDev,false
-1239f40,d,SetNvnSync,false
-1239f50,d,SetDataAndCapacity,false
-1239f60,d,__sort<std::__less<unsigned_short,unsigned_short>&,unsigned_short*>,false
-1239f70,d,sqrt,false
-1239f80,d,to_string,false
-1239f90,d,to_string,false
-1239fa0,d,nextafterf,false
-1239fb0,d,strtol,false
-1239fc0,d,FinishStartupLogo,false
-1239fd0,d,TSNPrintf,false
-1239fe0,d,init,false
-1239ff0,d,streambuf,false
-123a000,d,operator<<,false
-123a010,d,~streambuf,false
-123a020,d,~iostream,false
-123a030,d,~ios,false
-123a040,d,push_back,false
-123a050,d,resize,false
-123a060,d,sentry,false
-123a070,d,getloc,false
-123a080,d,use_facet,false
-123a090,d,~locale,false
-123a0a0,d,clear,false
-123a0b0,d,~sentry,false
-123a0c0,d,__throw_length_error,false
-123a0d0,d,swprintf,false
-123a0e0,d,strncmp,false
-123a0f0,d,PlayReport,false
-123a100,d,SetBuffer,false
-123a110,d,Add,false
-123a120,d,Add,false
-123a130,d,Add,false
-123a140,d,Save,false
-123a150,d,pow,false
-123a160,d,EnsureSaveData,false
-123a170,d,MountSaveData,false
-123a180,d,mbstowcs,false
-123a190,d,operator.new,false
-123a1a0,d,fopen,false
-123a1b0,d,getc,false
-123a1c0,d,freopen,false
-123a1d0,d,__errno_location,false
-123a1e0,d,strerror,false
-123a1f0,d,ungetc,false
-123a200,d,ferror,false
-123a210,d,fclose,false
-123a220,d,feof,false
-123a230,d,fread,false
-123a240,d,fprintf,false
-123a250,d,vfprintf,false
-123a260,d,strtoul,false
-123a270,d,isspace,false
-123a280,d,longjmp,false
-123a290,d,setjmp,false
-123a2a0,d,iscntrl,false
-123a2b0,d,isalpha,false
-123a2c0,d,isalnum,false
-123a2d0,d,memchr,false
-123a2e0,d,localeconv,false
-123a2f0,d,coshf,false
-123a300,d,frexpf,false
-123a310,d,ldexpf,false
-123a320,d,log10f,false
-123a330,d,modf,false
-123a340,d,sinhf,false
-123a350,d,tanhf,false
-123a360,d,strtod,false
-123a370,d,strcspn,false
-123a380,d,strncat,false
-123a390,d,toupper,false
-123a3a0,d,strpbrk,false
-123a3b0,d,islower,false
-123a3c0,d,ispunct,false
-123a3d0,d,isupper,false
-123a3e0,d,isxdigit,false
-123a3f0,d,strcoll,false
-123a400,d,GetDesiredLanguage,false
-123a410,d,swscanf,false
-123a420,d,SNPrintf,false
-123a430,d,ReferSymbol,false
-123a440,d,memmove,false
-123a450,d,GetFirstBlock,false
-123a460,d,InitializeAudioRendererParameter,false
-123a470,d,IsValidAudioRendererParameter,false
-123a480,d,GetAudioRendererWorkBufferSize,false
-123a490,d,GetAudioRendererConfigWorkBufferSize,false
-123a4a0,d,GetRequiredBufferSizeForCircularBufferSink,false
-123a4b0,d,ReadCircularBufferSink,false
-123a4c0,d,AddCircularBufferSink,false
-123a4d0,d,AcquireMemoryPool,false
-123a4e0,d,RequestAttachMemoryPool,false
-123a4f0,d,GetMemoryPoolState,false
-123a500,d,RequestUpdateAudioRenderer,false
-123a510,d,RequestDetachMemoryPool,false
-123a520,d,ExecuteAudioRendererRendering,false
-123a530,d,WaitSystemEvent,false
-123a540,d,ReleaseMemoryPool,false
-123a550,d,GetAudioRendererElapsedFrameCount,false
-123a560,d,GetRequiredBufferSizeForPerformanceFrames,false
-123a570,d,OpenAudioRenderer,false
-123a580,d,InitializeAudioRendererConfig,false
-123a590,d,AddDeviceSink,false
-123a5a0,d,SetDownMixParameter,false
-123a5b0,d,SetDownMixParameterEnabled,false
-123a5c0,d,StartAudioRenderer,false
-123a5d0,d,StopAudioRenderer,false
-123a5e0,d,CloseAudioRenderer,false
-123a5f0,d,TryReceiveMessageQueue,false
-123a600,d,TrySendMessageQueue,false
-123a610,d,ReceiveMessageQueue,false
-123a620,d,JamMessageQueue,false
-123a630,d,SetPerformanceFrameBuffer,false
-123a640,d,PerformanceInfo,false
-123a650,d,SetBuffer,false
-123a660,d,MoveToNextFrame,false
-123a670,d,~PerformanceInfo,false
-123a680,d,GetFrameIndex,false
-123a690,d,IsRenderingTimeLimitExceeded,false
-123a6a0,d,GetEntries,false
-123a6b0,d,GetTotalProcessingTime,false
-123a6c0,d,ConvertToTick,false
-123a6d0,d,GetSubMixNodeId,false
-123a6e0,d,GetSinkNodeId,false
-123a6f0,d,GetSinkNodeId,false
-123a700,d,GetVoiceDropCount,false
-123a710,d,IsVoiceValid,false
-123a720,d,SetVoicePriority,false
-123a730,d,AcquireVoiceSlot,false
-123a740,d,SetVoiceSrcQuality,false
-123a750,d,SetVoiceDestination,false
-123a760,d,SetVoiceDestination,false
-123a770,d,GetVoiceNodeId,false
-123a780,d,ReleaseVoiceSlot,false
-123a790,d,GetVoicePlayState,false
-123a7a0,d,SetVoiceVolume,false
-123a7b0,d,SetVoicePitch,false
-123a7c0,d,SetVoiceBiquadFilterParameter,false
-123a7d0,d,SetVoicePlayState,false
-123a7e0,d,AppendWaveBuffer,false
-123a7f0,d,SetVoiceMixVolume,false
-123a800,d,SetVoiceMixVolume,false
-123a810,d,GetReleasedWaveBuffer,false
-123a820,d,IsVoiceDroppedFlagOn,false
-123a830,d,GetVoicePlayedSampleCount,false
-123a840,d,GetRequiredBufferSizeForAuxSendReturnBuffer,false
-123a850,d,AddAux,false
-123a860,d,AddAux,false
-123a870,d,SetAuxEnabled,false
-123a880,d,SetAuxInputOutput,false
-123a890,d,RemoveAux,false
-123a8a0,d,RemoveAux,false
-123a8b0,d,GetAuxSampleCount,false
-123a8c0,d,GetAuxSampleRate,false
-123a8d0,d,ReadAuxSendBuffer,false
-123a8e0,d,WriteAuxReturnBuffer,false
-123a8f0,d,GetRequiredBufferSizeForDelay,false
+1238e80,d,<EXTERNAL>::__nnmusl_init_dso,false
+1238e90,d,<EXTERNAL>::strlen,false
+1238ea0,d,<EXTERNAL>::__cxa_guard_acquire,false
+1238eb0,d,<EXTERNAL>::__cxa_guard_release,false
+1238ec0,d,<EXTERNAL>::nn::os::GetHostArgc,false
+1238ed0,d,<EXTERNAL>::nn::os::GetHostArgv,false
+1238ee0,d,<EXTERNAL>::srand,false
+1238ef0,d,<EXTERNAL>::memset,false
+1238f00,d,<EXTERNAL>::memcpy,false
+1238f10,d,<EXTERNAL>::std::__shared_weak_count (GhidraClass)::__release_weak,false
+1238f20,d,<EXTERNAL>::abort,false
+1238f30,d,<EXTERNAL>::std::__shared_weak_count (GhidraClass)::~__shared_weak_count,false
+1238f40,d,<EXTERNAL>::acosf,false
+1238f50,d,<EXTERNAL>::sqrtf,false
+1238f60,d,<EXTERNAL>::fmodf,false
+1238f70,d,<EXTERNAL>::nn::nfp::GetState,false
+1238f80,d,<EXTERNAL>::nn::os::InitializeEvent,false
+1238f90,d,<EXTERNAL>::nn::os::TryWaitEvent,false
+1238fa0,d,<EXTERNAL>::nn::os::DestroySystemEvent,false
+1238fb0,d,<EXTERNAL>::nn::os::ClearSystemEvent,false
+1238fc0,d,<EXTERNAL>::nn::os::TimedWaitSystemEvent,false
+1238fd0,d,<EXTERNAL>::nn::os::TryWaitSystemEvent,false
+1238fe0,d,<EXTERNAL>::memcmp,false
+1238ff0,d,<EXTERNAL>::nn::os::FinalizeEvent,false
+1239000,d,<EXTERNAL>::nn::nfp::Initialize,false
+1239010,d,<EXTERNAL>::nn::nfp::Finalize,false
+1239020,d,<EXTERNAL>::nn::nfp::ListDevices,false
+1239030,d,<EXTERNAL>::nn::nfp::GetNpadId,false
+1239040,d,<EXTERNAL>::nn::nfp::AttachActivateEvent,false
+1239050,d,<EXTERNAL>::nn::nfp::AttachDeactivateEvent,false
+1239060,d,<EXTERNAL>::nn::nfp::StartDetection,false
+1239070,d,<EXTERNAL>::nn::nfp::StopDetection,false
+1239080,d,<EXTERNAL>::nn::nfp::Mount,false
+1239090,d,<EXTERNAL>::nn::os::SleepThread,false
+12390a0,d,<EXTERNAL>::nn::nfp::Unmount,false
+12390b0,d,<EXTERNAL>::nn::nfp::CreateApplicationArea,false
+12390c0,d,<EXTERNAL>::nn::nfp::OpenApplicationArea,false
+12390d0,d,<EXTERNAL>::nn::nfp::GetApplicationArea,false
+12390e0,d,<EXTERNAL>::nn::nfp::SetApplicationArea,false
+12390f0,d,<EXTERNAL>::nn::nfp::Flush,false
+1239100,d,<EXTERNAL>::nn::nfp::Restore,false
+1239110,d,<EXTERNAL>::nn::nfp::GetTagInfo,false
+1239120,d,<EXTERNAL>::nn::nfp::GetRegisterInfo,false
+1239130,d,<EXTERNAL>::nn::nfp::GetCommonInfo,false
+1239140,d,<EXTERNAL>::nn::nfp::GetModelInfo,false
+1239150,d,<EXTERNAL>::nn::nfp::StartNicknameAndOwnerSettings,false
+1239160,d,<EXTERNAL>::nn::nfp::StartGameDataEraser,false
+1239170,d,<EXTERNAL>::nn::nfp::StartRestorer,false
+1239180,d,<EXTERNAL>::nn::nfp::GetDeviceState,false
+1239190,d,<EXTERNAL>::nn::nfp::AttachAvailabilityChangeEvent,false
+12391a0,d,<EXTERNAL>::nn::os::CreateThread,false
+12391b0,d,<EXTERNAL>::nn::os::StartThread,false
+12391c0,d,<EXTERNAL>::nn::diag::detail::AbortImpl,false
+12391d0,d,<EXTERNAL>::nn::diag::detail::AbortImpl,false
+12391e0,d,<EXTERNAL>::nn::os::WaitEvent,false
+12391f0,d,<EXTERNAL>::nn::os::SignalEvent,false
+1239200,d,<EXTERNAL>::nn::os::GetSystemTick,false
+1239210,d,<EXTERNAL>::nn::os::ConvertToTimeSpan,false
+1239220,d,<EXTERNAL>::nn::os::WaitThread,false
+1239230,d,<EXTERNAL>::nn::os::DestroyThread,false
+1239240,d,<EXTERNAL>::nn::os::ClearEvent,false
+1239250,d,<EXTERNAL>::nn::fs::CreateDirectory,false
+1239260,d,<EXTERNAL>::nn::fs::CommitSaveData,false
+1239270,d,<EXTERNAL>::nn::fs::OpenDirectory,false
+1239280,d,<EXTERNAL>::nn::fs::CloseDirectory,false
+1239290,d,<EXTERNAL>::nn::fs::DeleteFile,false
+12392a0,d,<EXTERNAL>::nn::fs::DeleteDirectory,false
+12392b0,d,<EXTERNAL>::nn::fs::ReadDirectory,false
+12392c0,d,<EXTERNAL>::strcpy,false
+12392d0,d,<EXTERNAL>::nn::fs::OpenFile,false
+12392e0,d,<EXTERNAL>::nn::fs::GetFileSize,false
+12392f0,d,<EXTERNAL>::nn::fs::CloseFile,false
+1239300,d,<EXTERNAL>::nn::fs::ReadFile,false
+1239310,d,<EXTERNAL>::nn::fs::CreateFile,false
+1239320,d,<EXTERNAL>::nn::fs::WriteFile,false
+1239330,d,<EXTERNAL>::nn::fs::SetFileSize,false
+1239340,d,<EXTERNAL>::nn::os::InitializeLightEvent,false
+1239350,d,<EXTERNAL>::nn::os::FinalizeLightEvent,false
+1239360,d,<EXTERNAL>::nn::os::SignalLightEvent,false
+1239370,d,<EXTERNAL>::nn::os::WaitLightEvent,false
+1239380,d,<EXTERNAL>::nn::os::TimedWaitLightEvent,false
+1239390,d,<EXTERNAL>::nn::os::ClearLightEvent,false
+12393a0,d,<EXTERNAL>::nn::os::SetThreadCoreMask,false
+12393b0,d,<EXTERNAL>::nn::os::InitializeMutex,false
+12393c0,d,<EXTERNAL>::nn::os::FinalizeMutex,false
+12393d0,d,<EXTERNAL>::nn::os::LockMutex,false
+12393e0,d,<EXTERNAL>::nn::os::UnlockMutex,false
+12393f0,d,<EXTERNAL>::wcslen,false
+1239400,d,<EXTERNAL>::wcscpy,false
+1239410,d,<EXTERNAL>::wcscmp,false
+1239420,d,<EXTERNAL>::wcsstr,false
+1239430,d,<EXTERNAL>::nn::time::ClockSnapshot (GhidraClass)::ClockSnapshot,false
+1239440,d,<EXTERNAL>::nn::time::ClockSnapshot (GhidraClass)::CreateWithStandardSystemClock,false
+1239450,d,<EXTERNAL>::nn::time::ClockSnapshot (GhidraClass)::GetStandardUserSystemClockCalendarTime,false
+1239460,d,<EXTERNAL>::nn::hid::InitializeNpad,false
+1239470,d,<EXTERNAL>::nn::hid::SetSupportedNpadStyleSet,false
+1239480,d,<EXTERNAL>::nn::hid::SetSupportedNpadIdType,false
+1239490,d,<EXTERNAL>::nn::hid::GetVibrationDeviceHandles,false
+12394a0,d,<EXTERNAL>::nn::hid::InitializeVibrationDevice,false
+12394b0,d,<EXTERNAL>::nn::hid::GetVibrationDeviceInfo,false
+12394c0,d,<EXTERNAL>::nn::hid::GetNpadStyleSet,false
+12394d0,d,<EXTERNAL>::nn::hid::GetNpadState,false
+12394e0,d,<EXTERNAL>::nn::hid::GetNpadState,false
+12394f0,d,<EXTERNAL>::nn::hid::SetNpadJoyHoldType,false
+1239500,d,<EXTERNAL>::nn::hid::ControllerSupportArg::SetDefault,false
+1239510,d,<EXTERNAL>::nn::hid::ShowControllerSupport,false
+1239520,d,<EXTERNAL>::nn::hid::VibrationNode::Update,false
+1239530,d,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::Connect,false
+1239540,d,<EXTERNAL>::nn::hid::VibrationTarget (GhidraClass)::SetVibrationDeviceHandle,false
+1239550,d,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::~VibrationNodeConnection,false
+1239560,d,<EXTERNAL>::nn::hid::VibrationTarget (GhidraClass)::~VibrationTarget,false
+1239570,d,<EXTERNAL>::nn::hid::VibrationMixer (GhidraClass)::~VibrationMixer,false
+1239580,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::VibrationPlayer,false
+1239590,d,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::VibrationNodeConnection,false
+12395a0,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::~VibrationPlayer,false
+12395b0,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Load,false
+12395c0,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::SetLoop,false
+12395d0,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Stop,false
+12395e0,d,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::SetModulation,false
+12395f0,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Play,false
+1239600,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::GetCurrentPosition,false
+1239610,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::IsLoop,false
+1239620,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::IsPlaying,false
+1239630,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::GetFileInfo,false
+1239640,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Unload,false
+1239650,d,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::OnNextSampleRequired,false
+1239660,d,<EXTERNAL>::strstr,false
+1239670,d,<EXTERNAL>::strcat,false
+1239680,d,<EXTERNAL>::nn::hid::VibrationMixer (GhidraClass)::VibrationMixer,false
+1239690,d,<EXTERNAL>::nn::hid::VibrationTarget (GhidraClass)::VibrationTarget,false
+12396a0,d,<EXTERNAL>::rand,false
+12396b0,d,<EXTERNAL>::asinf,false
+12396c0,d,<EXTERNAL>::cosf,false
+12396d0,d,<EXTERNAL>::atan2f,false
+12396e0,d,<EXTERNAL>::sinf,false
+12396f0,d,<EXTERNAL>::tanf,false
+1239700,d,<EXTERNAL>::strcmp,false
+1239710,d,<EXTERNAL>::vsnprintf,false
+1239720,d,<EXTERNAL>::strncpy,false
+1239730,d,<EXTERNAL>::tolower,false
+1239740,d,<EXTERNAL>::sprintf,false
+1239750,d,<EXTERNAL>::nn::oe::GetProgramTotalActiveTime,false
+1239760,d,<EXTERNAL>::nn::os::GetCurrentThread,false
+1239770,d,<EXTERNAL>::printf,false
+1239780,d,<EXTERNAL>::strchr,false
+1239790,d,<EXTERNAL>::snprintf,false
+12397a0,d,<EXTERNAL>::nn::audio::InitializeAudioOutParameter,false
+12397b0,d,<EXTERNAL>::nn::audio::OpenDefaultAudioOut,false
+12397c0,d,<EXTERNAL>::nn::audio::CloseAudioOut,false
+12397d0,d,<EXTERNAL>::nn::audio::SetAudioDeviceOutputVolume,false
+12397e0,d,<EXTERNAL>::nn::detail::UnexpectedDefaultImpl,false
+12397f0,d,<EXTERNAL>::logf,false
+1239800,d,<EXTERNAL>::expf,false
+1239810,d,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Finalize,false
+1239820,d,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Allocate,false
+1239830,d,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Free,false
+1239840,d,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Reallocate,false
+1239850,d,<EXTERNAL>::nn::os::QueryMemoryInfo,false
+1239860,d,<EXTERNAL>::nn::os::SetMemoryHeapSize,false
+1239870,d,<EXTERNAL>::nn::os::AllocateMemoryBlock,false
+1239880,d,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Initialize,false
+1239890,d,<EXTERNAL>::nv::SetGraphicsAllocator,false
+12398a0,d,<EXTERNAL>::nv::InitializeGraphics,false
+12398b0,d,<EXTERNAL>::nn::fs::SetAllocator,false
+12398c0,d,<EXTERNAL>::nn::fs::QueryMountRomCacheSize,false
+12398d0,d,<EXTERNAL>::nn::fs::MountRom,false
+12398e0,d,<EXTERNAL>::nn::oe::EnterExitRequestHandlingSection,false
+12398f0,d,<EXTERNAL>::nn::account::Initialize,false
+1239900,d,<EXTERNAL>::nn::account::TryOpenPreselectedUser,false
+1239910,d,<EXTERNAL>::nn::account::GetUserId,false
+1239920,d,<EXTERNAL>::nn::util::GenerateUuid,false
+1239930,d,<EXTERNAL>::nn::oe::Initialize,false
+1239940,d,<EXTERNAL>::nn::oe::SetOperationModeChangedNotificationEnabled,false
+1239950,d,<EXTERNAL>::nn::oe::SetPerformanceModeChangedNotificationEnabled,false
+1239960,d,<EXTERNAL>::nn::oe::SetPerformanceConfiguration,false
+1239970,d,<EXTERNAL>::nn::oe::GetOperationMode,false
+1239980,d,<EXTERNAL>::nn::time::Initialize,false
+1239990,d,<EXTERNAL>::nn::time::Finalize,false
+12399a0,d,<EXTERNAL>::nn::account::CloseUser,false
+12399b0,d,<EXTERNAL>::nv::FinalizeGraphics,false
+12399c0,d,<EXTERNAL>::nn::oe::LeaveExitRequestHandlingSection,false
+12399d0,d,<EXTERNAL>::nn::fs::Unmount,false
+12399e0,d,<EXTERNAL>::nn::oe::TryPopNotificationMessage,false
+12399f0,d,<EXTERNAL>::nn::oe::SetUserInactivityDetectionTimeExtended,false
+1239a00,d,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::StandardAllocator,false
+1239a10,d,<EXTERNAL>::atof,false
+1239a20,d,<EXTERNAL>::atoi,false
+1239a30,d,<EXTERNAL>::nn::util::GetGzipDecompressedSize,false
+1239a40,d,<EXTERNAL>::nn::util::DecompressGzip,false
+1239a50,d,<EXTERNAL>::__assert_fail,false
+1239a60,d,<EXTERNAL>::modff,false
+1239a70,d,<EXTERNAL>::exit,false
+1239a80,d,<EXTERNAL>::nn::vi::Initialize,false
+1239a90,d,<EXTERNAL>::nn::vi::OpenDefaultDisplay,false
+1239aa0,d,<EXTERNAL>::nn::vi::CreateLayer,false
+1239ab0,d,<EXTERNAL>::nn::vi::GetNativeWindow,false
+1239ac0,d,<EXTERNAL>::nvnBootstrapLoader,false
+1239ad0,d,<EXTERNAL>::powf,false
+1239ae0,d,<EXTERNAL>::nn::oe::SetCpuBoostMode,false
+1239af0,d,<EXTERNAL>::atanf,false
+1239b00,d,<EXTERNAL>::nn::audio::OpenDefaultAudioOut,false
+1239b10,d,<EXTERNAL>::nn::audio::GetAudioOutChannelCount,false
+1239b20,d,<EXTERNAL>::nn::audio::GetAudioOutSampleFormat,false
+1239b30,d,<EXTERNAL>::nn::audio::GetSampleByteSize,false
+1239b40,d,<EXTERNAL>::nn::audio::GetAudioOutSampleRate,false
+1239b50,d,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForResampler,false
+1239b60,d,<EXTERNAL>::nn::audio::InitializeResampler,false
+1239b70,d,<EXTERNAL>::nn::audio::ProcessResamplerBuffer,false
+1239b80,d,<EXTERNAL>::nn::audio::SetAudioOutBufferInfo,false
+1239b90,d,<EXTERNAL>::nn::audio::AppendAudioOutBuffer,false
+1239ba0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+1239bb0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::~Buffer,false
+1239bc0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+1239bd0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::SetRange,false
+1239be0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+1239bf0,d,<EXTERNAL>::nn::audio::StartAudioOut,false
+1239c00,d,<EXTERNAL>::nn::audio::StopAudioOut,false
+1239c10,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Base,false
+1239c20,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Size,false
+1239c30,d,<EXTERNAL>::movie::Buffer (GhidraClass)::GetUint32Data,false
+1239c40,d,<EXTERNAL>::movie::Buffer (GhidraClass)::GetInt64Data,false
+1239c50,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Capacity,false
+1239c60,d,<EXTERNAL>::nn::audio::GetReleasedAudioOutBuffer,false
+1239c70,d,<EXTERNAL>::nn::audio::GetAudioOutBufferDataPointer,false
+1239c80,d,<EXTERNAL>::nn::audio::GetAudioOutBufferDataSize,false
+1239c90,d,<EXTERNAL>::nn::audio::GetResamplerOutputSampleCount,false
+1239ca0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Offset,false
+1239cb0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::SetInt64Data,false
+1239cc0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::GetOutputBuffer,false
+1239cd0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::SetInt32Data,false
+1239ce0,d,<EXTERNAL>::movie::Buffer (GhidraClass)::SetUint32Data,false
+1239cf0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::ReleaseOutputBufferIndex,false
+1239d00,d,<EXTERNAL>::nn::os::InitializeMultiWait,false
+1239d10,d,<EXTERNAL>::nn::os::InitializeMultiWaitHolder,false
+1239d20,d,<EXTERNAL>::nn::os::SetMultiWaitHolderUserData,false
+1239d30,d,<EXTERNAL>::nn::os::LinkMultiWaitHolder,false
+1239d40,d,<EXTERNAL>::nn::os::WaitAny,false
+1239d50,d,<EXTERNAL>::nn::os::GetMultiWaitHolderUserData,false
+1239d60,d,<EXTERNAL>::nn::os::UnlinkMultiWaitHolder,false
+1239d70,d,<EXTERNAL>::nn::os::FinalizeMultiWaitHolder,false
+1239d80,d,<EXTERNAL>::nn::os::FinalizeMultiWait,false
+1239d90,d,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+1239da0,d,<EXTERNAL>::movie::Extractor (GhidraClass)::Extractor,false
+1239db0,d,<EXTERNAL>::movie::Extractor (GhidraClass)::~Extractor,false
+1239dc0,d,<EXTERNAL>::movie::MediaData (GhidraClass)::MediaData,false
+1239dd0,d,<EXTERNAL>::movie::MediaData (GhidraClass)::FindString,false
+1239de0,d,<EXTERNAL>::movie::MediaData (GhidraClass)::FindInt32,false
+1239df0,d,<EXTERNAL>::movie::MediaData (GhidraClass)::FindInt64,false
+1239e00,d,<EXTERNAL>::movie::MediaData (GhidraClass)::Clear,false
+1239e10,d,<EXTERNAL>::movie::MediaData (GhidraClass)::~MediaData,false
+1239e20,d,<EXTERNAL>::movie::SetAllocator,false
+1239e30,d,<EXTERNAL>::nn::os::InitializeMessageQueue,false
+1239e40,d,<EXTERNAL>::nn::os::TimedReceiveMessageQueue,false
+1239e50,d,<EXTERNAL>::nn::os::FinalizeMessageQueue,false
+1239e60,d,<EXTERNAL>::nn::os::SendMessageQueue,false
+1239e70,d,<EXTERNAL>::movie::GetThreadPriority,false
+1239e80,d,<EXTERNAL>::movie::Decoder (GhidraClass)::Decoder,false
+1239e90,d,<EXTERNAL>::movie::Decoder (GhidraClass)::~Decoder,false
+1239ea0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::RegisterClientEvents,false
+1239eb0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::Configure,false
+1239ec0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::Stop,false
+1239ed0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::Start,false
+1239ee0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::Flush,false
+1239ef0,d,<EXTERNAL>::movie::Decoder (GhidraClass)::GetInputBuffer,false
+1239f00,d,<EXTERNAL>::movie::Decoder (GhidraClass)::SendInputBufferForDecode,false
+1239f10,d,<EXTERNAL>::movie::Decoder (GhidraClass)::GetOutputFormat,false
+1239f20,d,<EXTERNAL>::movie::Decoder (GhidraClass)::GetOutputBufferFormat,false
+1239f30,d,<EXTERNAL>::movie::Buffer (GhidraClass)::SetNvnDev,false
+1239f40,d,<EXTERNAL>::movie::Buffer (GhidraClass)::SetNvnSync,false
+1239f50,d,<EXTERNAL>::movie::Buffer (GhidraClass)::SetDataAndCapacity,false
+1239f60,d,<EXTERNAL>::std::__sort<std::__less<unsigned_short,unsigned_short>&,unsigned_short*>,false
+1239f70,d,<EXTERNAL>::sqrt,false
+1239f80,d,<EXTERNAL>::std::to_string,false
+1239f90,d,<EXTERNAL>::std::to_string,false
+1239fa0,d,<EXTERNAL>::nextafterf,false
+1239fb0,d,<EXTERNAL>::strtol,false
+1239fc0,d,<EXTERNAL>::nn::oe::FinishStartupLogo,false
+1239fd0,d,<EXTERNAL>::nn::util::TSNPrintf,false
+1239fe0,d,<EXTERNAL>::std::ios_base::init,false
+1239ff0,d,<EXTERNAL>::std::streambuf (GhidraClass)::streambuf,false
+123a000,d,<EXTERNAL>::std::ostream (GhidraClass)::operator<<,false
+123a010,d,<EXTERNAL>::std::streambuf (GhidraClass)::~streambuf,false
+123a020,d,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+123a030,d,<EXTERNAL>::std::ios (GhidraClass)::~ios,false
+123a040,d,<EXTERNAL>::std::string::push_back,false
+123a050,d,<EXTERNAL>::std::string::resize,false
+123a060,d,<EXTERNAL>::std::ostream::sentry (GhidraClass)::sentry,false
+123a070,d,<EXTERNAL>::std::ios_base::getloc,false
+123a080,d,<EXTERNAL>::std::locale (GhidraClass)::use_facet,false
+123a090,d,<EXTERNAL>::std::locale (GhidraClass)::~locale,false
+123a0a0,d,<EXTERNAL>::std::ios_base::clear,false
+123a0b0,d,<EXTERNAL>::std::ostream::sentry (GhidraClass)::~sentry,false
+123a0c0,d,<EXTERNAL>::std::__basic_string_common<true>::__throw_length_error,false
+123a0d0,d,<EXTERNAL>::swprintf,false
+123a0e0,d,<EXTERNAL>::strncmp,false
+123a0f0,d,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::PlayReport,false
+123a100,d,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::SetBuffer,false
+123a110,d,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Add,false
+123a120,d,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Add,false
+123a130,d,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Add,false
+123a140,d,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Save,false
+123a150,d,<EXTERNAL>::pow,false
+123a160,d,<EXTERNAL>::nn::fs::EnsureSaveData,false
+123a170,d,<EXTERNAL>::nn::fs::MountSaveData,false
+123a180,d,<EXTERNAL>::mbstowcs,false
+123a190,d,<EXTERNAL>::operator.new,false
+123a1a0,d,<EXTERNAL>::fopen,false
+123a1b0,d,<EXTERNAL>::getc,false
+123a1c0,d,<EXTERNAL>::freopen,false
+123a1d0,d,<EXTERNAL>::__errno_location,false
+123a1e0,d,<EXTERNAL>::strerror,false
+123a1f0,d,<EXTERNAL>::ungetc,false
+123a200,d,<EXTERNAL>::ferror,false
+123a210,d,<EXTERNAL>::fclose,false
+123a220,d,<EXTERNAL>::feof,false
+123a230,d,<EXTERNAL>::fread,false
+123a240,d,<EXTERNAL>::fprintf,false
+123a250,d,<EXTERNAL>::vfprintf,false
+123a260,d,<EXTERNAL>::strtoul,false
+123a270,d,<EXTERNAL>::isspace,false
+123a280,d,<EXTERNAL>::longjmp,false
+123a290,d,<EXTERNAL>::setjmp,false
+123a2a0,d,<EXTERNAL>::iscntrl,false
+123a2b0,d,<EXTERNAL>::isalpha,false
+123a2c0,d,<EXTERNAL>::isalnum,false
+123a2d0,d,<EXTERNAL>::memchr,false
+123a2e0,d,<EXTERNAL>::localeconv,false
+123a2f0,d,<EXTERNAL>::coshf,false
+123a300,d,<EXTERNAL>::frexpf,false
+123a310,d,<EXTERNAL>::ldexpf,false
+123a320,d,<EXTERNAL>::log10f,false
+123a330,d,<EXTERNAL>::modf,false
+123a340,d,<EXTERNAL>::sinhf,false
+123a350,d,<EXTERNAL>::tanhf,false
+123a360,d,<EXTERNAL>::strtod,false
+123a370,d,<EXTERNAL>::strcspn,false
+123a380,d,<EXTERNAL>::strncat,false
+123a390,d,<EXTERNAL>::toupper,false
+123a3a0,d,<EXTERNAL>::strpbrk,false
+123a3b0,d,<EXTERNAL>::islower,false
+123a3c0,d,<EXTERNAL>::ispunct,false
+123a3d0,d,<EXTERNAL>::isupper,false
+123a3e0,d,<EXTERNAL>::isxdigit,false
+123a3f0,d,<EXTERNAL>::strcoll,false
+123a400,d,<EXTERNAL>::nn::oe::GetDesiredLanguage,false
+123a410,d,<EXTERNAL>::swscanf,false
+123a420,d,<EXTERNAL>::nn::util::SNPrintf,false
+123a430,d,<EXTERNAL>::nn::util::ReferSymbol,false
+123a440,d,<EXTERNAL>::memmove,false
+123a450,d,<EXTERNAL>::nn::util::BinaryFileHeader::GetFirstBlock,false
+123a460,d,<EXTERNAL>::nn::audio::InitializeAudioRendererParameter,false
+123a470,d,<EXTERNAL>::nn::audio::IsValidAudioRendererParameter,false
+123a480,d,<EXTERNAL>::nn::audio::GetAudioRendererWorkBufferSize,false
+123a490,d,<EXTERNAL>::nn::audio::GetAudioRendererConfigWorkBufferSize,false
+123a4a0,d,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForCircularBufferSink,false
+123a4b0,d,<EXTERNAL>::nn::audio::ReadCircularBufferSink,false
+123a4c0,d,<EXTERNAL>::nn::audio::AddCircularBufferSink,false
+123a4d0,d,<EXTERNAL>::nn::audio::AcquireMemoryPool,false
+123a4e0,d,<EXTERNAL>::nn::audio::RequestAttachMemoryPool,false
+123a4f0,d,<EXTERNAL>::nn::audio::GetMemoryPoolState,false
+123a500,d,<EXTERNAL>::nn::audio::RequestUpdateAudioRenderer,false
+123a510,d,<EXTERNAL>::nn::audio::RequestDetachMemoryPool,false
+123a520,d,<EXTERNAL>::nn::audio::ExecuteAudioRendererRendering,false
+123a530,d,<EXTERNAL>::nn::os::WaitSystemEvent,false
+123a540,d,<EXTERNAL>::nn::audio::ReleaseMemoryPool,false
+123a550,d,<EXTERNAL>::nn::audio::GetAudioRendererElapsedFrameCount,false
+123a560,d,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForPerformanceFrames,false
+123a570,d,<EXTERNAL>::nn::audio::OpenAudioRenderer,false
+123a580,d,<EXTERNAL>::nn::audio::InitializeAudioRendererConfig,false
+123a590,d,<EXTERNAL>::nn::audio::AddDeviceSink,false
+123a5a0,d,<EXTERNAL>::nn::audio::SetDownMixParameter,false
+123a5b0,d,<EXTERNAL>::nn::audio::SetDownMixParameterEnabled,false
+123a5c0,d,<EXTERNAL>::nn::audio::StartAudioRenderer,false
+123a5d0,d,<EXTERNAL>::nn::audio::StopAudioRenderer,false
+123a5e0,d,<EXTERNAL>::nn::audio::CloseAudioRenderer,false
+123a5f0,d,<EXTERNAL>::nn::os::TryReceiveMessageQueue,false
+123a600,d,<EXTERNAL>::nn::os::TrySendMessageQueue,false
+123a610,d,<EXTERNAL>::nn::os::ReceiveMessageQueue,false
+123a620,d,<EXTERNAL>::nn::os::JamMessageQueue,false
+123a630,d,<EXTERNAL>::nn::audio::SetPerformanceFrameBuffer,false
+123a640,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::PerformanceInfo,false
+123a650,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::SetBuffer,false
+123a660,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::MoveToNextFrame,false
+123a670,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::~PerformanceInfo,false
+123a680,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetFrameIndex,false
+123a690,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::IsRenderingTimeLimitExceeded,false
+123a6a0,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetEntries,false
+123a6b0,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetTotalProcessingTime,false
+123a6c0,d,<EXTERNAL>::nn::os::ConvertToTick,false
+123a6d0,d,<EXTERNAL>::nn::audio::GetSubMixNodeId,false
+123a6e0,d,<EXTERNAL>::nn::audio::GetSinkNodeId,false
+123a6f0,d,<EXTERNAL>::nn::audio::GetSinkNodeId,false
+123a700,d,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetVoiceDropCount,false
+123a710,d,<EXTERNAL>::nn::audio::IsVoiceValid,false
+123a720,d,<EXTERNAL>::nn::audio::SetVoicePriority,false
+123a730,d,<EXTERNAL>::nn::audio::AcquireVoiceSlot,false
+123a740,d,<EXTERNAL>::nn::audio::SetVoiceSrcQuality,false
+123a750,d,<EXTERNAL>::nn::audio::SetVoiceDestination,false
+123a760,d,<EXTERNAL>::nn::audio::SetVoiceDestination,false
+123a770,d,<EXTERNAL>::nn::audio::GetVoiceNodeId,false
+123a780,d,<EXTERNAL>::nn::audio::ReleaseVoiceSlot,false
+123a790,d,<EXTERNAL>::nn::audio::GetVoicePlayState,false
+123a7a0,d,<EXTERNAL>::nn::audio::SetVoiceVolume,false
+123a7b0,d,<EXTERNAL>::nn::audio::SetVoicePitch,false
+123a7c0,d,<EXTERNAL>::nn::audio::SetVoiceBiquadFilterParameter,false
+123a7d0,d,<EXTERNAL>::nn::audio::SetVoicePlayState,false
+123a7e0,d,<EXTERNAL>::nn::audio::AppendWaveBuffer,false
+123a7f0,d,<EXTERNAL>::nn::audio::SetVoiceMixVolume,false
+123a800,d,<EXTERNAL>::nn::audio::SetVoiceMixVolume,false
+123a810,d,<EXTERNAL>::nn::audio::GetReleasedWaveBuffer,false
+123a820,d,<EXTERNAL>::nn::audio::IsVoiceDroppedFlagOn,false
+123a830,d,<EXTERNAL>::nn::audio::GetVoicePlayedSampleCount,false
+123a840,d,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForAuxSendReturnBuffer,false
+123a850,d,<EXTERNAL>::nn::audio::AddAux,false
+123a860,d,<EXTERNAL>::nn::audio::AddAux,false
+123a870,d,<EXTERNAL>::nn::audio::SetAuxEnabled,false
+123a880,d,<EXTERNAL>::nn::audio::SetAuxInputOutput,false
+123a890,d,<EXTERNAL>::nn::audio::RemoveAux,false
+123a8a0,d,<EXTERNAL>::nn::audio::RemoveAux,false
+123a8b0,d,<EXTERNAL>::nn::audio::GetAuxSampleCount,false
+123a8c0,d,<EXTERNAL>::nn::audio::GetAuxSampleRate,false
+123a8d0,d,<EXTERNAL>::nn::audio::ReadAuxSendBuffer,false
+123a8e0,d,<EXTERNAL>::nn::audio::WriteAuxReturnBuffer,false
+123a8f0,d,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForDelay,false
 123a900,10,FUN_710123a800,false
 123a910,10,FUN_710123a810,false
-123a920,d,SetDelayTime,false
+123a920,d,<EXTERNAL>::nn::audio::SetDelayTime,false
 123a930,10,FUN_710123a830,false
 123a940,10,FUN_710123a840,false
 123a950,10,FUN_710123a850,false
@@ -43821,7 +43830,7 @@ ffff60,130,FUN_7100fffe60,false
 123a970,10,FUN_710123a870,false
 123a980,10,FUN_710123a880,false
 123a9c0,10,FUN_710123a8c0,false
-123a9d0,d,GetRequiredBufferSizeForI3dl2Reverb,false
+123a9d0,d,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForI3dl2Reverb,false
 123a9e0,10,FUN_710123a8e0,false
 123a9f0,10,FUN_710123a8f0,false
 123aa00,10,FUN_710123a900,false
@@ -43838,7 +43847,7 @@ ffff60,130,FUN_7100fffe60,false
 123aab0,10,FUN_710123a9b0,false
 123aac0,10,FUN_710123a9c0,false
 123ab00,10,FUN_710123aa00,false
-123ab10,d,GetRequiredBufferSizeForReverb,false
+123ab10,d,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForReverb,false
 123ab20,10,FUN_710123aa20,false
 123ab30,10,FUN_710123aa30,false
 123ab40,10,FUN_710123aa40,false
@@ -43846,7 +43855,7 @@ ffff60,130,FUN_7100fffe60,false
 123ab60,10,FUN_710123aa60,false
 123ab70,10,FUN_710123aa70,false
 123ab80,10,FUN_710123aa80,false
-123ab90,d,SetReverbDecayTime,false
+123ab90,d,<EXTERNAL>::nn::audio::SetReverbDecayTime,false
 123aba0,10,FUN_710123aaa0,false
 123abb0,10,FUN_710123aab0,false
 123abc0,10,FUN_710123aac0,false
@@ -43854,542 +43863,542 @@ ffff60,130,FUN_7100fffe60,false
 123abe0,10,FUN_710123aae0,false
 123abf0,10,FUN_710123aaf0,false
 123ac30,10,FUN_710123ab30,false
-123ac40,d,FlushFile,false
-123ac50,d,CreateThread,false
-123ac60,d,SetPriorityOnCurrentThread,false
-123ac70,d,SetThreadNamePointer,false
-123ac80,d,AcquireFinalMix,false
-123ac90,d,ReleaseFinalMix,false
-123aca0,d,AcquireSubMix,false
-123acb0,d,ReleaseSubMix,false
-123acc0,d,SetSubMixVolume,false
-123acd0,d,SetSubMixMixVolume,false
-123ace0,d,SetSubMixMixVolume,false
-123acf0,d,SetSubMixDestination,false
-123ad00,d,SetSubMixDestination,false
-72a1a100,1,__nnmusl_init_dso,false
-72a1f100,1,GetHostArgc,false
-72a20100,1,GetHostArgv,false
-72a21100,1,__cxa_guard_acquire,false
-72a22100,1,__cxa_guard_release,false
-72a23100,1,srand,false
-72a24100,1,strlen,false
-72a25100,1,memcpy,false
-72a26100,1,memmove,false
-72a27100,1,strcmp,false
-72a28100,1,cosf,false
-72a29100,1,fclose,false
-72a2a100,1,fprintf,false
-72a2b100,1,fread,false
-72a2c100,1,sinf,false
-72a2d100,1,sqrtf,false
-72a2f100,1,strcat,false
-72a30100,1,strchr,false
-72a31100,1,strcpy,false
-72a32100,1,strncpy,false
-72a33100,1,vfprintf,false
-72a34100,1,vsnprintf,false
-72a35100,1,sprintf,false
-72a36100,1,strncmp,false
-72a37100,1,strstr,false
-72a38100,1,memset,false
-72a39100,1,atoi,false
-72a3a100,1,fmodf,false
-72a3b100,1,fopen,false
-72a3c100,1,powf,false
-72a3e100,1,toupper,false
-72a3f100,1,snprintf,false
-72a40100,1,__release_weak,false
-72a41100,1,__get_deleter,false
-72a42100,1,~__shared_weak_count,false
-72a43100,1,abort,false
-72a44100,1,acosf,false
-72a45100,1,__cxa_pure_virtual,false
-72a46100,1,TryWaitEvent,false
-72a47100,1,FinalizeEvent,false
-72a48100,1,InitializeEvent,false
-72a49100,1,ClearSystemEvent,false
-72a4a100,1,DestroySystemEvent,false
-72a4b100,1,TryWaitSystemEvent,false
-72a4c100,1,TimedWaitSystemEvent,false
-72a4d100,1,GetState,false
-72a4e100,1,memcmp,false
-72a4f100,1,SleepThread,false
-72a50100,1,GetTagInfo,false
-72a51100,1,Initialize,false
-72a52100,1,ListDevices,false
-72a53100,1,GetModelInfo,false
-72a54100,1,GetCommonInfo,false
-72a55100,1,StartRestorer,false
-72a56100,1,StopDetection,false
-72a57100,1,GetDeviceState,false
-72a58100,1,StartDetection,false
-72a59100,1,GetRegisterInfo,false
-72a5a100,1,GetApplicationArea,false
-72a5b100,1,SetApplicationArea,false
-72a5c100,1,AttachActivateEvent,false
-72a5d100,1,OpenApplicationArea,false
-72a5e100,1,StartGameDataEraser,false
-72a5f100,1,AttachDeactivateEvent,false
-72a60100,1,CreateApplicationArea,false
-72a61100,1,AttachAvailabilityChangeEvent,false
-72a62100,1,StartNicknameAndOwnerSettings,false
-72a63100,1,Flush,false
-72a64100,1,Mount,false
-72a65100,1,Restore,false
-72a66100,1,Unmount,false
-72a67100,1,Finalize,false
-72a68100,1,GetNpadId,false
-72a69100,1,ClearEvent,false
-72a6a100,1,WaitThread,false
-72a6b100,1,SignalEvent,false
-72a6c100,1,StartThread,false
-72a6d100,1,CreateThread,false
-72a6e100,1,DestroyThread,false
-72a6f100,1,GetSystemTick,false
-72a70100,1,ConvertToTimeSpan,false
-72a71100,1,WaitEvent,false
-72a72100,1,AbortImpl,false
-72a73100,1,AbortImpl,false
-72a74100,1,CreateFile,false
-72a75100,1,DeleteFile,false
-72a76100,1,GetFileSize,false
-72a77100,1,SetFileSize,false
-72a78100,1,OpenDirectory,false
-72a79100,1,ReadDirectory,false
-72a7a100,1,CloseDirectory,false
-72a7b100,1,CommitSaveData,false
-72a7c100,1,CreateDirectory,false
-72a7d100,1,DeleteDirectory,false
-72a7e100,1,OpenFile,false
-72a7f100,1,ReadFile,false
-72a80100,1,CloseFile,false
-72a81100,1,WriteFile,false
-72a82100,1,UnlockMutex,false
-72a83100,1,FinalizeMutex,false
-72a84100,1,WaitLightEvent,false
-72a85100,1,ClearLightEvent,false
-72a86100,1,InitializeMutex,false
-72a87100,1,SignalLightEvent,false
-72a88100,1,SetThreadCoreMask,false
-72a89100,1,FinalizeLightEvent,false
-72a8a100,1,TimedWaitLightEvent,false
-72a8b100,1,InitializeLightEvent,false
-72a8c100,1,LockMutex,false
-72a8d100,1,swprintf,false
-72a8e100,1,wcscmp,false
-72a8f100,1,wcscpy,false
-72a90100,1,wcslen,false
-72a91100,1,wcsstr,false
-72a92100,1,CreateWithStandardSystemClock,false
-72a93100,1,ClockSnapshot,false
-72a94100,1,GetStandardUserSystemClockCalendarTime,false
-72a95100,1,strtol,false
-72a96100,1,GetNpadState,false
-72a97100,1,GetNpadState,false
-72a98100,1,InitializeNpad,false
-72a99100,1,GetNpadStyleSet,false
-72a9a100,1,SetNpadJoyHoldType,false
-72a9b100,1,SetDefault,false
-72a9c100,1,ShowControllerSupport,false
-72a9d100,1,GetVibrationDeviceInfo,false
-72a9e100,1,SetSupportedNpadIdType,false
-72a9f100,1,SetSupportedNpadStyleSet,false
-72aa0100,1,GetVibrationDeviceHandles,false
-72aa1100,1,InitializeVibrationDevice,false
-72aa3100,1,Update,false
-72aa4100,1,~VibrationMixer,false
-72aa5100,1,SetVibrationDeviceHandle,false
-72aa6100,1,~VibrationTarget,false
-72aa7100,1,Connect,false
-72aa8100,1,~VibrationNodeConnection,false
-72aa9100,1,OnNextSampleRequired,false
-72aaa100,1,Load,false
-72aab100,1,Play,false
-72aac100,1,Stop,false
-72aad100,1,Unload,false
-72aae100,1,SetLoop,false
-72aaf100,1,VibrationPlayer,false
-72ab0100,1,~VibrationPlayer,false
-72ab1100,1,SetModulation,false
-72ab2100,1,VibrationNodeConnection,false
-72ab3100,1,GetFileInfo,false
-72ab4100,1,GetCurrentPosition,false
-72ab5100,1,IsLoop,false
-72ab6100,1,IsPlaying,false
-72ab7100,1,VibrationMixer,false
-72ab8100,1,VibrationTarget,false
-72ab9100,1,expf,false
-72aba100,1,rand,false
-72abb100,1,asinf,false
-72abc100,1,atan2f,false
-72abd100,1,tanf,false
-72abe100,1,tolower,false
-72abf100,1,GetProgramTotalActiveTime,false
-72ac0100,1,GetCurrentThread,false
-72ac1100,1,printf,false
-72ac8100,1,CloseAudioOut,false
-72ac9100,1,OpenDefaultAudioOut,false
-72aca100,1,SetAudioDeviceOutputVolume,false
-72acb100,1,InitializeAudioOutParameter,false
-72acc100,1,UnexpectedDefaultImpl,false
-72acd100,1,logf,false
-72ace100,1,SetAllocator,false
-72acf100,1,QueryMountRomCacheSize,false
-72ad0100,1,Unmount,false
-72ad1100,1,MountRom,false
-72ad2100,1,Initialize,false
-72ad3100,1,GetOperationMode,false
-72ad4100,1,TryPopNotificationMessage,false
-72ad5100,1,SetPerformanceConfiguration,false
-72ad6100,1,EnterExitRequestHandlingSection,false
-72ad7100,1,LeaveExitRequestHandlingSection,false
-72ad8100,1,SetUserInactivityDetectionTimeExtended,false
-72ad9100,1,SetOperationModeChangedNotificationEnabled,false
-72ada100,1,SetPerformanceModeChangedNotificationEnabled,false
-72adb100,1,QueryMemoryInfo,false
-72adc100,1,SetMemoryHeapSize,false
-72add100,1,AllocateMemoryBlock,false
-72ade100,1,Initialize,false
-72adf100,1,Reallocate,false
-72ae0100,1,Free,false
-72ae1100,1,Allocate,false
-72ae2100,1,Finalize,false
-72ae3100,1,StandardAllocator,false
-72ae4100,1,Initialize,false
-72ae5100,1,Finalize,false
-72ae6100,1,GenerateUuid,false
-72ae7100,1,Initialize,false
-72ae8100,1,TryOpenPreselectedUser,false
-72ae9100,1,CloseUser,false
-72aea100,1,GetUserId,false
-72aeb100,1,FinalizeGraphics,false
-72aec100,1,InitializeGraphics,false
-72aed100,1,SetGraphicsAllocator,false
-72aee100,1,atof,false
-72aef100,1,DecompressGzip,false
-72af0100,1,GetGzipDecompressedSize,false
-72af1100,1,__assert_fail,false
-72af2100,1,modff,false
-72af3100,1,exit,false
-72af4100,1,Initialize,false
-72af5100,1,CreateLayer,false
-72af6100,1,GetNativeWindow,false
-72af7100,1,OpenDefaultDisplay,false
-72af8100,1,nvnBootstrapLoader,false
-72af9100,1,SetCpuBoostMode,false
-72afa100,1,atanf,false
-72afb100,1,StopAudioOut,false
-72afc100,1,StartAudioOut,false
-72afd100,1,GetSampleByteSize,false
-72afe100,1,InitializeResampler,false
-72aff100,1,OpenDefaultAudioOut,false
-72b00100,1,AppendAudioOutBuffer,false
-72b01100,1,GetAudioOutSampleRate,false
-72b02100,1,SetAudioOutBufferInfo,false
-72b03100,1,ProcessResamplerBuffer,false
-72b04100,1,GetAudioOutChannelCount,false
-72b05100,1,GetAudioOutSampleFormat,false
-72b06100,1,GetAudioOutBufferDataSize,false
-72b07100,1,GetReleasedAudioOutBuffer,false
-72b08100,1,GetAudioOutBufferDataPointer,false
-72b09100,1,GetResamplerOutputSampleCount,false
-72b0a100,1,GetRequiredBufferSizeForResampler,false
-72b0b100,1,SetInt32Data,false
-72b0c100,1,SetInt64Data,false
-72b0d100,1,SetUint32Data,false
-72b0e100,1,SetRange,false
-72b0f100,1,Buffer,false
-72b10100,1,Buffer,false
-72b11100,1,Buffer,false
-72b12100,1,~Buffer,false
-72b13100,1,GetOutputBuffer,false
-72b14100,1,ReleaseOutputBufferIndex,false
-72b15100,1,GetInt64Data,false
-72b16100,1,GetUint32Data,false
-72b17100,1,Base,false
-72b18100,1,Size,false
-72b19100,1,Offset,false
-72b1a100,1,Capacity,false
-72b1b100,1,FinalizeMultiWait,false
-72b1c100,1,InitializeMultiWait,false
-72b1d100,1,LinkMultiWaitHolder,false
-72b1e100,1,UnlinkMultiWaitHolder,false
-72b1f100,1,FinalizeMultiWaitHolder,false
-72b20100,1,InitializeMultiWaitHolder,false
-72b21100,1,GetMultiWaitHolderUserData,false
-72b22100,1,SetMultiWaitHolderUserData,false
-72b23100,1,WaitAny,false
-72b24100,1,Buffer,false
-72b25100,1,SelectTrack,false
-72b26100,1,GetSampleTime,false
-72b27100,1,GetTrackCount,false
-72b28100,1,SetDataSource,false
-72b29100,1,SetDataSource,false
-72b2a100,1,SetDataSource,false
-72b2b100,1,UnselectTrack,false
-72b2c100,1,GetBufferedRange,false
-72b2d100,1,GetSampleMetaData,false
-72b2e100,1,GetTrackConfiguration,false
-72b2f100,1,GetTrackIndexForAvailableData,false
-72b30100,1,Read,false
-72b31100,1,SeekTo,false
-72b32100,1,Advance,false
-72b33100,1,Extractor,false
-72b34100,1,~Extractor,false
-72b35100,1,Clear,false
-72b36100,1,MediaData,false
-72b37100,1,~MediaData,false
-72b38100,1,FindString,false
-72b39100,1,FindInt32,false
-72b3a100,1,FindInt64,false
-72b3b100,1,SendMessageQueue,false
-72b3c100,1,FinalizeMessageQueue,false
-72b3d100,1,InitializeMessageQueue,false
-72b3e100,1,TimedReceiveMessageQueue,false
-72b3f100,1,SetAllocator,false
-72b40100,1,GetThreadPriority,false
-72b41100,1,GetInputBuffer,false
-72b42100,1,RegisterClientEvents,false
-72b43100,1,SendInputBufferForDecode,false
-72b44100,1,Stop,false
-72b45100,1,Flush,false
-72b46100,1,Start,false
-72b47100,1,Configure,false
-72b48100,1,Decoder,false
-72b49100,1,~Decoder,false
-72b4a100,1,SetNvnSync,false
-72b4b100,1,SetDataAndCapacity,false
-72b4c100,1,SetNvnDev,false
-72b4d100,1,GetOutputFormat,false
-72b4e100,1,GetOutputBufferFormat,false
-72b4f100,1,__sort<std::__less<unsigned_short,unsigned_short>&,unsigned_short*>,false
-72b50100,1,sqrt,false
-72b51100,1,to_string,false
-72b52100,1,to_string,false
-72b53100,1,nextafterf,false
-72b54100,1,FinishStartupLogo,false
-72b55100,1,TSNPrintf,false
-72b56100,1,__throw_length_error,false
-72b57100,1,use_facet,false
-72b58100,1,getloc,false
-72b59100,1,resize,false
-72b5a100,1,push_back,false
-72b5b100,1,~istream,false
-72b5c100,1,~istream,false
-72b5d100,1,sentry,false
-72b5e100,1,~sentry,false
-72b5f100,1,~ostream,false
-72b60100,1,~ostream,false
-72b61100,1,operator<<,false
-72b62100,1,~iostream,false
-72b63100,1,~iostream,false
-72b64100,1,~iostream,false
-72b65100,1,sync,false
-72b66100,1,imbue,false
-72b67100,1,uflow,false
-72b68100,1,setbuf,false
-72b69100,1,xsgetn,false
-72b6a100,1,xsputn,false
-72b6b100,1,showmanyc,false
-72b6c100,1,streambuf,false
-72b6d100,1,~streambuf,false
-72b6f100,1,~locale,false
-72b70100,1,init,false
-72b71100,1,clear,false
-72b72100,1,~ios,false
-72b73100,1,~iostream,false
-72b74100,1,~iostream,false
-72b75100,1,~istream,false
-72b76100,1,~istream,false
-72b77100,1,~ostream,false
-72b78100,1,~ostream,false
-72b79100,1,~iostream,false
-72b7a100,1,~iostream,false
-72b7b100,1,Add,false
-72b7c100,1,Add,false
-72b7d100,1,Add,false
-72b7e100,1,Save,false
-72b7f100,1,SetBuffer,false
-72b80100,1,PlayReport,false
-72b81100,1,pow,false
-72b82100,1,MountSaveData,false
-72b83100,1,EnsureSaveData,false
-72b84100,1,mbstowcs,false
-72b86100,1,operator.new,false
-72b87100,1,__errno_location,false
-72b88100,1,feof,false
-72b89100,1,ferror,false
-72b8a100,1,freopen,false
-72b8b100,1,getc,false
-72b8d100,1,strerror,false
-72b8e100,1,ungetc,false
-72b8f100,1,isspace,false
-72b90100,1,strtoul,false
-72b91100,1,longjmp,false
-72b92100,1,setjmp,false
-72b93100,1,isalnum,false
-72b94100,1,isalpha,false
-72b95100,1,iscntrl,false
-72b96100,1,localeconv,false
-72b97100,1,memchr,false
-72b98100,1,coshf,false
-72b99100,1,frexpf,false
-72b9a100,1,ldexpf,false
-72b9b100,1,log10f,false
-72b9c100,1,modf,false
-72b9d100,1,sinhf,false
-72b9e100,1,tanhf,false
-72b9f100,1,strcspn,false
-72ba0100,1,strncat,false
-72ba1100,1,strtod,false
-72ba2100,1,islower,false
-72ba3100,1,ispunct,false
-72ba4100,1,isupper,false
-72ba5100,1,isxdigit,false
-72ba6100,1,strpbrk,false
-72ba7100,1,strcoll,false
-72ba8100,1,GetDesiredLanguage,false
-72ba9100,1,swscanf,false
-72baa100,1,SNPrintf,false
-72baf100,1,ReferSymbol,false
-72bb0100,1,GetFirstBlock,false
-72bb1100,1,WaitSystemEvent,false
-72bb2100,1,AddDeviceSink,false
-72bb3100,1,AcquireMemoryPool,false
-72bb4100,1,OpenAudioRenderer,false
-72bb5100,1,ReleaseMemoryPool,false
-72bb6100,1,StopAudioRenderer,false
-72bb7100,1,CloseAudioRenderer,false
-72bb8100,1,GetMemoryPoolState,false
-72bb9100,1,StartAudioRenderer,false
-72bba100,1,SetDownMixParameter,false
-72bbb100,1,AddCircularBufferSink,false
-72bbc100,1,ReadCircularBufferSink,false
-72bbd100,1,RequestAttachMemoryPool,false
-72bbe100,1,RequestDetachMemoryPool,false
-72bbf100,1,RequestUpdateAudioRenderer,false
-72bc0100,1,SetDownMixParameterEnabled,false
-72bc1100,1,ExecuteAudioRendererRendering,false
-72bc2100,1,InitializeAudioRendererConfig,false
-72bc3100,1,IsValidAudioRendererParameter,false
-72bc4100,1,GetAudioRendererWorkBufferSize,false
-72bc5100,1,InitializeAudioRendererParameter,false
-72bc6100,1,GetAudioRendererElapsedFrameCount,false
-72bc7100,1,GetAudioRendererConfigWorkBufferSize,false
-72bc8100,1,GetRequiredBufferSizeForPerformanceFrames,false
-72bc9100,1,GetRequiredBufferSizeForCircularBufferSink,false
-72bca100,1,ReceiveMessageQueue,false
-72bcb100,1,TrySendMessageQueue,false
-72bcc100,1,TryReceiveMessageQueue,false
-72bcd100,1,ConvertToTick,false
-72bce100,1,JamMessageQueue,false
-72bcf100,1,GetSinkNodeId,false
-72bd0100,1,GetSinkNodeId,false
-72bd1100,1,GetSubMixNodeId,false
-72bd2100,1,MoveToNextFrame,false
-72bd3100,1,SetBuffer,false
-72bd4100,1,PerformanceInfo,false
-72bd5100,1,~PerformanceInfo,false
-72bd6100,1,SetPerformanceFrameBuffer,false
-72bd7100,1,GetEntries,false
-72bd8100,1,GetFrameIndex,false
-72bd9100,1,GetVoiceDropCount,false
-72bda100,1,GetTotalProcessingTime,false
-72bdb100,1,IsRenderingTimeLimitExceeded,false
-72bdd100,1,IsVoiceValid,false
-72bde100,1,SetVoicePitch,false
-72bdf100,1,GetVoiceNodeId,false
-72be0100,1,SetVoiceVolume,false
-72be1100,1,AcquireVoiceSlot,false
-72be2100,1,AppendWaveBuffer,false
-72be3100,1,ReleaseVoiceSlot,false
-72be4100,1,SetVoicePriority,false
-72be5100,1,GetVoicePlayState,false
-72be6100,1,SetVoiceMixVolume,false
-72be7100,1,SetVoiceMixVolume,false
-72be8100,1,SetVoicePlayState,false
-72be9100,1,SetVoiceSrcQuality,false
-72bea100,1,SetVoiceDestination,false
-72beb100,1,SetVoiceDestination,false
-72bec100,1,IsVoiceDroppedFlagOn,false
-72bed100,1,GetReleasedWaveBuffer,false
-72bee100,1,GetVoicePlayedSampleCount,false
-72bef100,1,SetVoiceBiquadFilterParameter,false
-72bf0100,1,SetAuxEnabled,false
-72bf1100,1,GetAuxSampleRate,false
-72bf2100,1,GetAuxSampleCount,false
-72bf3100,1,ReadAuxSendBuffer,false
-72bf4100,1,SetAuxInputOutput,false
-72bf5100,1,WriteAuxReturnBuffer,false
-72bf6100,1,GetRequiredBufferSizeForAuxSendReturnBuffer,false
-72bf7100,1,AddAux,false
-72bf8100,1,AddAux,false
-72bf9100,1,RemoveAux,false
-72bfa100,1,RemoveAux,false
-72bfb100,1,RemoveDelay,false
-72bfc100,1,RemoveDelay,false
-72bfd100,1,SetDelayTime,false
-72bfe100,1,SetDelayInGain,false
-72bff100,1,SetDelayDryGain,false
-72c00100,1,SetDelayEnabled,false
-72c01100,1,IsDelayRemovable,false
-72c02100,1,SetDelayInputOutput,false
-72c03100,1,SetDelayFeedbackGain,false
-72c04100,1,SetDelayChannelSpread,false
-72c05100,1,SetDelayLowPassAmount,false
-72c06100,1,GetRequiredBufferSizeForDelay,false
-72c07100,1,AddDelay,false
-72c08100,1,AddDelay,false
-72c09100,1,AddI3dl2Reverb,false
-72c0a100,1,AddI3dl2Reverb,false
-72c0b100,1,RemoveI3dl2Reverb,false
-72c0c100,1,RemoveI3dl2Reverb,false
-72c0d100,1,SetI3dl2ReverbDryGain,false
-72c0e100,1,SetI3dl2ReverbEnabled,false
-72c0f100,1,IsI3dl2ReverbRemovable,false
-72c10100,1,SetI3dl2ReverbRoomGain,false
-72c11100,1,SetI3dl2ReverbReverbGain,false
-72c12100,1,SetI3dl2ReverbRoomHfGain,false
-72c13100,1,SetI3dl2ReverbHfReference,false
-72c14100,1,SetI3dl2ReverbInputOutput,false
-72c15100,1,SetI3dl2ReverbReflectionsGain,false
-72c16100,1,SetI3dl2ReverbLateReverbDensity,false
-72c17100,1,SetI3dl2ReverbLateReverbDecayTime,false
-72c18100,1,SetI3dl2ReverbLateReverbDelayTime,false
-72c19100,1,SetI3dl2ReverbLateReverbDiffusion,false
-72c1a100,1,SetI3dl2ReverbReflectionDelayTime,false
-72c1b100,1,GetRequiredBufferSizeForI3dl2Reverb,false
-72c1c100,1,SetI3dl2ReverbLateReverbHfDecayRatio,false
-72c1d100,1,RemoveReverb,false
-72c1e100,1,RemoveReverb,false
-72c1f100,1,SetReverbDryGain,false
-72c20100,1,SetReverbEnabled,false
-72c21100,1,SetReverbOutGain,false
-72c22100,1,IsReverbRemovable,false
-72c23100,1,SetReverbLateGain,false
-72c24100,1,SetReverbLateMode,false
-72c25100,1,SetReverbDecayTime,false
-72c26100,1,SetReverbEarlyGain,false
-72c27100,1,SetReverbEarlyMode,false
-72c28100,1,SetReverbColoration,false
-72c29100,1,SetReverbReverbGain,false
-72c2a100,1,SetReverbInputOutput,false
-72c2b100,1,SetReverbPredelayTime,false
-72c2c100,1,GetRequiredBufferSizeForReverb,false
-72c2d100,1,SetReverbHighFrequencyDecayRatio,false
-72c2e100,1,AddReverb,false
-72c2f100,1,AddReverb,false
-72c30100,1,FlushFile,false
-72c31100,1,SetPriorityOnCurrentThread,false
-72c32100,1,CreateThread,false
-72c33100,1,SetThreadNamePointer,false
-72c34100,1,AcquireFinalMix,false
-72c35100,1,ReleaseFinalMix,false
-72c36100,1,AcquireSubMix,false
-72c37100,1,ReleaseSubMix,false
-72c38100,1,SetSubMixVolume,false
-72c39100,1,SetSubMixMixVolume,false
-72c3a100,1,SetSubMixMixVolume,false
-72c3b100,1,SetSubMixDestination,false
-72c3c100,1,SetSubMixDestination,false
+123ac40,d,<EXTERNAL>::nn::fs::FlushFile,false
+123ac50,d,<EXTERNAL>::nn::os::CreateThread,false
+123ac60,d,<EXTERNAL>::nn::fs::SetPriorityOnCurrentThread,false
+123ac70,d,<EXTERNAL>::nn::os::SetThreadNamePointer,false
+123ac80,d,<EXTERNAL>::nn::audio::AcquireFinalMix,false
+123ac90,d,<EXTERNAL>::nn::audio::ReleaseFinalMix,false
+123aca0,d,<EXTERNAL>::nn::audio::AcquireSubMix,false
+123acb0,d,<EXTERNAL>::nn::audio::ReleaseSubMix,false
+123acc0,d,<EXTERNAL>::nn::audio::SetSubMixVolume,false
+123acd0,d,<EXTERNAL>::nn::audio::SetSubMixMixVolume,false
+123ace0,d,<EXTERNAL>::nn::audio::SetSubMixMixVolume,false
+123acf0,d,<EXTERNAL>::nn::audio::SetSubMixDestination,false
+123ad00,d,<EXTERNAL>::nn::audio::SetSubMixDestination,false
+72a1a100,1,<EXTERNAL>::__nnmusl_init_dso,false
+72a1f100,1,<EXTERNAL>::nn::os::GetHostArgc,false
+72a20100,1,<EXTERNAL>::nn::os::GetHostArgv,false
+72a21100,1,<EXTERNAL>::__cxa_guard_acquire,false
+72a22100,1,<EXTERNAL>::__cxa_guard_release,false
+72a23100,1,<EXTERNAL>::srand,false
+72a24100,1,<EXTERNAL>::strlen,false
+72a25100,1,<EXTERNAL>::memcpy,false
+72a26100,1,<EXTERNAL>::memmove,false
+72a27100,1,<EXTERNAL>::strcmp,false
+72a28100,1,<EXTERNAL>::cosf,false
+72a29100,1,<EXTERNAL>::fclose,false
+72a2a100,1,<EXTERNAL>::fprintf,false
+72a2b100,1,<EXTERNAL>::fread,false
+72a2c100,1,<EXTERNAL>::sinf,false
+72a2d100,1,<EXTERNAL>::sqrtf,false
+72a2f100,1,<EXTERNAL>::strcat,false
+72a30100,1,<EXTERNAL>::strchr,false
+72a31100,1,<EXTERNAL>::strcpy,false
+72a32100,1,<EXTERNAL>::strncpy,false
+72a33100,1,<EXTERNAL>::vfprintf,false
+72a34100,1,<EXTERNAL>::vsnprintf,false
+72a35100,1,<EXTERNAL>::sprintf,false
+72a36100,1,<EXTERNAL>::strncmp,false
+72a37100,1,<EXTERNAL>::strstr,false
+72a38100,1,<EXTERNAL>::memset,false
+72a39100,1,<EXTERNAL>::atoi,false
+72a3a100,1,<EXTERNAL>::fmodf,false
+72a3b100,1,<EXTERNAL>::fopen,false
+72a3c100,1,<EXTERNAL>::powf,false
+72a3e100,1,<EXTERNAL>::toupper,false
+72a3f100,1,<EXTERNAL>::snprintf,false
+72a40100,1,<EXTERNAL>::std::__shared_weak_count (GhidraClass)::__release_weak,false
+72a41100,1,<EXTERNAL>::std::__shared_weak_count (GhidraClass)::__get_deleter,false
+72a42100,1,<EXTERNAL>::std::__shared_weak_count (GhidraClass)::~__shared_weak_count,false
+72a43100,1,<EXTERNAL>::abort,false
+72a44100,1,<EXTERNAL>::acosf,false
+72a45100,1,<EXTERNAL>::__cxa_pure_virtual,false
+72a46100,1,<EXTERNAL>::nn::os::TryWaitEvent,false
+72a47100,1,<EXTERNAL>::nn::os::FinalizeEvent,false
+72a48100,1,<EXTERNAL>::nn::os::InitializeEvent,false
+72a49100,1,<EXTERNAL>::nn::os::ClearSystemEvent,false
+72a4a100,1,<EXTERNAL>::nn::os::DestroySystemEvent,false
+72a4b100,1,<EXTERNAL>::nn::os::TryWaitSystemEvent,false
+72a4c100,1,<EXTERNAL>::nn::os::TimedWaitSystemEvent,false
+72a4d100,1,<EXTERNAL>::nn::nfp::GetState,false
+72a4e100,1,<EXTERNAL>::memcmp,false
+72a4f100,1,<EXTERNAL>::nn::os::SleepThread,false
+72a50100,1,<EXTERNAL>::nn::nfp::GetTagInfo,false
+72a51100,1,<EXTERNAL>::nn::nfp::Initialize,false
+72a52100,1,<EXTERNAL>::nn::nfp::ListDevices,false
+72a53100,1,<EXTERNAL>::nn::nfp::GetModelInfo,false
+72a54100,1,<EXTERNAL>::nn::nfp::GetCommonInfo,false
+72a55100,1,<EXTERNAL>::nn::nfp::StartRestorer,false
+72a56100,1,<EXTERNAL>::nn::nfp::StopDetection,false
+72a57100,1,<EXTERNAL>::nn::nfp::GetDeviceState,false
+72a58100,1,<EXTERNAL>::nn::nfp::StartDetection,false
+72a59100,1,<EXTERNAL>::nn::nfp::GetRegisterInfo,false
+72a5a100,1,<EXTERNAL>::nn::nfp::GetApplicationArea,false
+72a5b100,1,<EXTERNAL>::nn::nfp::SetApplicationArea,false
+72a5c100,1,<EXTERNAL>::nn::nfp::AttachActivateEvent,false
+72a5d100,1,<EXTERNAL>::nn::nfp::OpenApplicationArea,false
+72a5e100,1,<EXTERNAL>::nn::nfp::StartGameDataEraser,false
+72a5f100,1,<EXTERNAL>::nn::nfp::AttachDeactivateEvent,false
+72a60100,1,<EXTERNAL>::nn::nfp::CreateApplicationArea,false
+72a61100,1,<EXTERNAL>::nn::nfp::AttachAvailabilityChangeEvent,false
+72a62100,1,<EXTERNAL>::nn::nfp::StartNicknameAndOwnerSettings,false
+72a63100,1,<EXTERNAL>::nn::nfp::Flush,false
+72a64100,1,<EXTERNAL>::nn::nfp::Mount,false
+72a65100,1,<EXTERNAL>::nn::nfp::Restore,false
+72a66100,1,<EXTERNAL>::nn::nfp::Unmount,false
+72a67100,1,<EXTERNAL>::nn::nfp::Finalize,false
+72a68100,1,<EXTERNAL>::nn::nfp::GetNpadId,false
+72a69100,1,<EXTERNAL>::nn::os::ClearEvent,false
+72a6a100,1,<EXTERNAL>::nn::os::WaitThread,false
+72a6b100,1,<EXTERNAL>::nn::os::SignalEvent,false
+72a6c100,1,<EXTERNAL>::nn::os::StartThread,false
+72a6d100,1,<EXTERNAL>::nn::os::CreateThread,false
+72a6e100,1,<EXTERNAL>::nn::os::DestroyThread,false
+72a6f100,1,<EXTERNAL>::nn::os::GetSystemTick,false
+72a70100,1,<EXTERNAL>::nn::os::ConvertToTimeSpan,false
+72a71100,1,<EXTERNAL>::nn::os::WaitEvent,false
+72a72100,1,<EXTERNAL>::nn::diag::detail::AbortImpl,false
+72a73100,1,<EXTERNAL>::nn::diag::detail::AbortImpl,false
+72a74100,1,<EXTERNAL>::nn::fs::CreateFile,false
+72a75100,1,<EXTERNAL>::nn::fs::DeleteFile,false
+72a76100,1,<EXTERNAL>::nn::fs::GetFileSize,false
+72a77100,1,<EXTERNAL>::nn::fs::SetFileSize,false
+72a78100,1,<EXTERNAL>::nn::fs::OpenDirectory,false
+72a79100,1,<EXTERNAL>::nn::fs::ReadDirectory,false
+72a7a100,1,<EXTERNAL>::nn::fs::CloseDirectory,false
+72a7b100,1,<EXTERNAL>::nn::fs::CommitSaveData,false
+72a7c100,1,<EXTERNAL>::nn::fs::CreateDirectory,false
+72a7d100,1,<EXTERNAL>::nn::fs::DeleteDirectory,false
+72a7e100,1,<EXTERNAL>::nn::fs::OpenFile,false
+72a7f100,1,<EXTERNAL>::nn::fs::ReadFile,false
+72a80100,1,<EXTERNAL>::nn::fs::CloseFile,false
+72a81100,1,<EXTERNAL>::nn::fs::WriteFile,false
+72a82100,1,<EXTERNAL>::nn::os::UnlockMutex,false
+72a83100,1,<EXTERNAL>::nn::os::FinalizeMutex,false
+72a84100,1,<EXTERNAL>::nn::os::WaitLightEvent,false
+72a85100,1,<EXTERNAL>::nn::os::ClearLightEvent,false
+72a86100,1,<EXTERNAL>::nn::os::InitializeMutex,false
+72a87100,1,<EXTERNAL>::nn::os::SignalLightEvent,false
+72a88100,1,<EXTERNAL>::nn::os::SetThreadCoreMask,false
+72a89100,1,<EXTERNAL>::nn::os::FinalizeLightEvent,false
+72a8a100,1,<EXTERNAL>::nn::os::TimedWaitLightEvent,false
+72a8b100,1,<EXTERNAL>::nn::os::InitializeLightEvent,false
+72a8c100,1,<EXTERNAL>::nn::os::LockMutex,false
+72a8d100,1,<EXTERNAL>::swprintf,false
+72a8e100,1,<EXTERNAL>::wcscmp,false
+72a8f100,1,<EXTERNAL>::wcscpy,false
+72a90100,1,<EXTERNAL>::wcslen,false
+72a91100,1,<EXTERNAL>::wcsstr,false
+72a92100,1,<EXTERNAL>::nn::time::ClockSnapshot (GhidraClass)::CreateWithStandardSystemClock,false
+72a93100,1,<EXTERNAL>::nn::time::ClockSnapshot (GhidraClass)::ClockSnapshot,false
+72a94100,1,<EXTERNAL>::nn::time::ClockSnapshot (GhidraClass)::GetStandardUserSystemClockCalendarTime,false
+72a95100,1,<EXTERNAL>::strtol,false
+72a96100,1,<EXTERNAL>::nn::hid::GetNpadState,false
+72a97100,1,<EXTERNAL>::nn::hid::GetNpadState,false
+72a98100,1,<EXTERNAL>::nn::hid::InitializeNpad,false
+72a99100,1,<EXTERNAL>::nn::hid::GetNpadStyleSet,false
+72a9a100,1,<EXTERNAL>::nn::hid::SetNpadJoyHoldType,false
+72a9b100,1,<EXTERNAL>::nn::hid::ControllerSupportArg::SetDefault,false
+72a9c100,1,<EXTERNAL>::nn::hid::ShowControllerSupport,false
+72a9d100,1,<EXTERNAL>::nn::hid::GetVibrationDeviceInfo,false
+72a9e100,1,<EXTERNAL>::nn::hid::SetSupportedNpadIdType,false
+72a9f100,1,<EXTERNAL>::nn::hid::SetSupportedNpadStyleSet,false
+72aa0100,1,<EXTERNAL>::nn::hid::GetVibrationDeviceHandles,false
+72aa1100,1,<EXTERNAL>::nn::hid::InitializeVibrationDevice,false
+72aa3100,1,<EXTERNAL>::nn::hid::VibrationNode::Update,false
+72aa4100,1,<EXTERNAL>::nn::hid::VibrationMixer (GhidraClass)::~VibrationMixer,false
+72aa5100,1,<EXTERNAL>::nn::hid::VibrationTarget (GhidraClass)::SetVibrationDeviceHandle,false
+72aa6100,1,<EXTERNAL>::nn::hid::VibrationTarget (GhidraClass)::~VibrationTarget,false
+72aa7100,1,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::Connect,false
+72aa8100,1,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::~VibrationNodeConnection,false
+72aa9100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::OnNextSampleRequired,false
+72aaa100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Load,false
+72aab100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Play,false
+72aac100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Stop,false
+72aad100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::Unload,false
+72aae100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::SetLoop,false
+72aaf100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::VibrationPlayer,false
+72ab0100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::~VibrationPlayer,false
+72ab1100,1,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::SetModulation,false
+72ab2100,1,<EXTERNAL>::nn::hid::VibrationNodeConnection (GhidraClass)::VibrationNodeConnection,false
+72ab3100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::GetFileInfo,false
+72ab4100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::GetCurrentPosition,false
+72ab5100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::IsLoop,false
+72ab6100,1,<EXTERNAL>::nn::hid::VibrationPlayer (GhidraClass)::IsPlaying,false
+72ab7100,1,<EXTERNAL>::nn::hid::VibrationMixer (GhidraClass)::VibrationMixer,false
+72ab8100,1,<EXTERNAL>::nn::hid::VibrationTarget (GhidraClass)::VibrationTarget,false
+72ab9100,1,<EXTERNAL>::expf,false
+72aba100,1,<EXTERNAL>::rand,false
+72abb100,1,<EXTERNAL>::asinf,false
+72abc100,1,<EXTERNAL>::atan2f,false
+72abd100,1,<EXTERNAL>::tanf,false
+72abe100,1,<EXTERNAL>::tolower,false
+72abf100,1,<EXTERNAL>::nn::oe::GetProgramTotalActiveTime,false
+72ac0100,1,<EXTERNAL>::nn::os::GetCurrentThread,false
+72ac1100,1,<EXTERNAL>::printf,false
+72ac8100,1,<EXTERNAL>::nn::audio::CloseAudioOut,false
+72ac9100,1,<EXTERNAL>::nn::audio::OpenDefaultAudioOut,false
+72aca100,1,<EXTERNAL>::nn::audio::SetAudioDeviceOutputVolume,false
+72acb100,1,<EXTERNAL>::nn::audio::InitializeAudioOutParameter,false
+72acc100,1,<EXTERNAL>::nn::detail::UnexpectedDefaultImpl,false
+72acd100,1,<EXTERNAL>::logf,false
+72ace100,1,<EXTERNAL>::nn::fs::SetAllocator,false
+72acf100,1,<EXTERNAL>::nn::fs::QueryMountRomCacheSize,false
+72ad0100,1,<EXTERNAL>::nn::fs::Unmount,false
+72ad1100,1,<EXTERNAL>::nn::fs::MountRom,false
+72ad2100,1,<EXTERNAL>::nn::oe::Initialize,false
+72ad3100,1,<EXTERNAL>::nn::oe::GetOperationMode,false
+72ad4100,1,<EXTERNAL>::nn::oe::TryPopNotificationMessage,false
+72ad5100,1,<EXTERNAL>::nn::oe::SetPerformanceConfiguration,false
+72ad6100,1,<EXTERNAL>::nn::oe::EnterExitRequestHandlingSection,false
+72ad7100,1,<EXTERNAL>::nn::oe::LeaveExitRequestHandlingSection,false
+72ad8100,1,<EXTERNAL>::nn::oe::SetUserInactivityDetectionTimeExtended,false
+72ad9100,1,<EXTERNAL>::nn::oe::SetOperationModeChangedNotificationEnabled,false
+72ada100,1,<EXTERNAL>::nn::oe::SetPerformanceModeChangedNotificationEnabled,false
+72adb100,1,<EXTERNAL>::nn::os::QueryMemoryInfo,false
+72adc100,1,<EXTERNAL>::nn::os::SetMemoryHeapSize,false
+72add100,1,<EXTERNAL>::nn::os::AllocateMemoryBlock,false
+72ade100,1,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Initialize,false
+72adf100,1,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Reallocate,false
+72ae0100,1,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Free,false
+72ae1100,1,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Allocate,false
+72ae2100,1,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::Finalize,false
+72ae3100,1,<EXTERNAL>::nn::mem::StandardAllocator (GhidraClass)::StandardAllocator,false
+72ae4100,1,<EXTERNAL>::nn::time::Initialize,false
+72ae5100,1,<EXTERNAL>::nn::time::Finalize,false
+72ae6100,1,<EXTERNAL>::nn::util::GenerateUuid,false
+72ae7100,1,<EXTERNAL>::nn::account::Initialize,false
+72ae8100,1,<EXTERNAL>::nn::account::TryOpenPreselectedUser,false
+72ae9100,1,<EXTERNAL>::nn::account::CloseUser,false
+72aea100,1,<EXTERNAL>::nn::account::GetUserId,false
+72aeb100,1,<EXTERNAL>::nv::FinalizeGraphics,false
+72aec100,1,<EXTERNAL>::nv::InitializeGraphics,false
+72aed100,1,<EXTERNAL>::nv::SetGraphicsAllocator,false
+72aee100,1,<EXTERNAL>::atof,false
+72aef100,1,<EXTERNAL>::nn::util::DecompressGzip,false
+72af0100,1,<EXTERNAL>::nn::util::GetGzipDecompressedSize,false
+72af1100,1,<EXTERNAL>::__assert_fail,false
+72af2100,1,<EXTERNAL>::modff,false
+72af3100,1,<EXTERNAL>::exit,false
+72af4100,1,<EXTERNAL>::nn::vi::Initialize,false
+72af5100,1,<EXTERNAL>::nn::vi::CreateLayer,false
+72af6100,1,<EXTERNAL>::nn::vi::GetNativeWindow,false
+72af7100,1,<EXTERNAL>::nn::vi::OpenDefaultDisplay,false
+72af8100,1,<EXTERNAL>::nvnBootstrapLoader,false
+72af9100,1,<EXTERNAL>::nn::oe::SetCpuBoostMode,false
+72afa100,1,<EXTERNAL>::atanf,false
+72afb100,1,<EXTERNAL>::nn::audio::StopAudioOut,false
+72afc100,1,<EXTERNAL>::nn::audio::StartAudioOut,false
+72afd100,1,<EXTERNAL>::nn::audio::GetSampleByteSize,false
+72afe100,1,<EXTERNAL>::nn::audio::InitializeResampler,false
+72aff100,1,<EXTERNAL>::nn::audio::OpenDefaultAudioOut,false
+72b00100,1,<EXTERNAL>::nn::audio::AppendAudioOutBuffer,false
+72b01100,1,<EXTERNAL>::nn::audio::GetAudioOutSampleRate,false
+72b02100,1,<EXTERNAL>::nn::audio::SetAudioOutBufferInfo,false
+72b03100,1,<EXTERNAL>::nn::audio::ProcessResamplerBuffer,false
+72b04100,1,<EXTERNAL>::nn::audio::GetAudioOutChannelCount,false
+72b05100,1,<EXTERNAL>::nn::audio::GetAudioOutSampleFormat,false
+72b06100,1,<EXTERNAL>::nn::audio::GetAudioOutBufferDataSize,false
+72b07100,1,<EXTERNAL>::nn::audio::GetReleasedAudioOutBuffer,false
+72b08100,1,<EXTERNAL>::nn::audio::GetAudioOutBufferDataPointer,false
+72b09100,1,<EXTERNAL>::nn::audio::GetResamplerOutputSampleCount,false
+72b0a100,1,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForResampler,false
+72b0b100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::SetInt32Data,false
+72b0c100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::SetInt64Data,false
+72b0d100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::SetUint32Data,false
+72b0e100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::SetRange,false
+72b0f100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+72b10100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+72b11100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+72b12100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::~Buffer,false
+72b13100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::GetOutputBuffer,false
+72b14100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::ReleaseOutputBufferIndex,false
+72b15100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::GetInt64Data,false
+72b16100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::GetUint32Data,false
+72b17100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Base,false
+72b18100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Size,false
+72b19100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Offset,false
+72b1a100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Capacity,false
+72b1b100,1,<EXTERNAL>::nn::os::FinalizeMultiWait,false
+72b1c100,1,<EXTERNAL>::nn::os::InitializeMultiWait,false
+72b1d100,1,<EXTERNAL>::nn::os::LinkMultiWaitHolder,false
+72b1e100,1,<EXTERNAL>::nn::os::UnlinkMultiWaitHolder,false
+72b1f100,1,<EXTERNAL>::nn::os::FinalizeMultiWaitHolder,false
+72b20100,1,<EXTERNAL>::nn::os::InitializeMultiWaitHolder,false
+72b21100,1,<EXTERNAL>::nn::os::GetMultiWaitHolderUserData,false
+72b22100,1,<EXTERNAL>::nn::os::SetMultiWaitHolderUserData,false
+72b23100,1,<EXTERNAL>::nn::os::WaitAny,false
+72b24100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::Buffer,false
+72b25100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::SelectTrack,false
+72b26100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::GetSampleTime,false
+72b27100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::GetTrackCount,false
+72b28100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::SetDataSource,false
+72b29100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::SetDataSource,false
+72b2a100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::SetDataSource,false
+72b2b100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::UnselectTrack,false
+72b2c100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::GetBufferedRange,false
+72b2d100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::GetSampleMetaData,false
+72b2e100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::GetTrackConfiguration,false
+72b2f100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::GetTrackIndexForAvailableData,false
+72b30100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::Read,false
+72b31100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::SeekTo,false
+72b32100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::Advance,false
+72b33100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::Extractor,false
+72b34100,1,<EXTERNAL>::movie::Extractor (GhidraClass)::~Extractor,false
+72b35100,1,<EXTERNAL>::movie::MediaData (GhidraClass)::Clear,false
+72b36100,1,<EXTERNAL>::movie::MediaData (GhidraClass)::MediaData,false
+72b37100,1,<EXTERNAL>::movie::MediaData (GhidraClass)::~MediaData,false
+72b38100,1,<EXTERNAL>::movie::MediaData (GhidraClass)::FindString,false
+72b39100,1,<EXTERNAL>::movie::MediaData (GhidraClass)::FindInt32,false
+72b3a100,1,<EXTERNAL>::movie::MediaData (GhidraClass)::FindInt64,false
+72b3b100,1,<EXTERNAL>::nn::os::SendMessageQueue,false
+72b3c100,1,<EXTERNAL>::nn::os::FinalizeMessageQueue,false
+72b3d100,1,<EXTERNAL>::nn::os::InitializeMessageQueue,false
+72b3e100,1,<EXTERNAL>::nn::os::TimedReceiveMessageQueue,false
+72b3f100,1,<EXTERNAL>::movie::SetAllocator,false
+72b40100,1,<EXTERNAL>::movie::GetThreadPriority,false
+72b41100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::GetInputBuffer,false
+72b42100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::RegisterClientEvents,false
+72b43100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::SendInputBufferForDecode,false
+72b44100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::Stop,false
+72b45100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::Flush,false
+72b46100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::Start,false
+72b47100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::Configure,false
+72b48100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::Decoder,false
+72b49100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::~Decoder,false
+72b4a100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::SetNvnSync,false
+72b4b100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::SetDataAndCapacity,false
+72b4c100,1,<EXTERNAL>::movie::Buffer (GhidraClass)::SetNvnDev,false
+72b4d100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::GetOutputFormat,false
+72b4e100,1,<EXTERNAL>::movie::Decoder (GhidraClass)::GetOutputBufferFormat,false
+72b4f100,1,<EXTERNAL>::std::__sort<std::__less<unsigned_short,unsigned_short>&,unsigned_short*>,false
+72b50100,1,<EXTERNAL>::sqrt,false
+72b51100,1,<EXTERNAL>::std::to_string,false
+72b52100,1,<EXTERNAL>::std::to_string,false
+72b53100,1,<EXTERNAL>::nextafterf,false
+72b54100,1,<EXTERNAL>::nn::oe::FinishStartupLogo,false
+72b55100,1,<EXTERNAL>::nn::util::TSNPrintf,false
+72b56100,1,<EXTERNAL>::std::__basic_string_common<true>::__throw_length_error,false
+72b57100,1,<EXTERNAL>::std::locale (GhidraClass)::use_facet,false
+72b58100,1,<EXTERNAL>::std::ios_base::getloc,false
+72b59100,1,<EXTERNAL>::std::string::resize,false
+72b5a100,1,<EXTERNAL>::std::string::push_back,false
+72b5b100,1,<EXTERNAL>::std::istream (GhidraClass)::~istream,false
+72b5c100,1,<EXTERNAL>::std::istream (GhidraClass)::~istream,false
+72b5d100,1,<EXTERNAL>::std::ostream::sentry (GhidraClass)::sentry,false
+72b5e100,1,<EXTERNAL>::std::ostream::sentry (GhidraClass)::~sentry,false
+72b5f100,1,<EXTERNAL>::std::ostream (GhidraClass)::~ostream,false
+72b60100,1,<EXTERNAL>::std::ostream (GhidraClass)::~ostream,false
+72b61100,1,<EXTERNAL>::std::ostream (GhidraClass)::operator<<,false
+72b62100,1,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+72b63100,1,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+72b64100,1,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+72b65100,1,<EXTERNAL>::std::streambuf (GhidraClass)::sync,false
+72b66100,1,<EXTERNAL>::std::streambuf (GhidraClass)::imbue,false
+72b67100,1,<EXTERNAL>::std::streambuf (GhidraClass)::uflow,false
+72b68100,1,<EXTERNAL>::std::streambuf (GhidraClass)::setbuf,false
+72b69100,1,<EXTERNAL>::std::streambuf (GhidraClass)::xsgetn,false
+72b6a100,1,<EXTERNAL>::std::streambuf (GhidraClass)::xsputn,false
+72b6b100,1,<EXTERNAL>::std::streambuf (GhidraClass)::showmanyc,false
+72b6c100,1,<EXTERNAL>::std::streambuf (GhidraClass)::streambuf,false
+72b6d100,1,<EXTERNAL>::std::streambuf (GhidraClass)::~streambuf,false
+72b6f100,1,<EXTERNAL>::std::locale (GhidraClass)::~locale,false
+72b70100,1,<EXTERNAL>::std::ios_base::init,false
+72b71100,1,<EXTERNAL>::std::ios_base::clear,false
+72b72100,1,<EXTERNAL>::std::ios (GhidraClass)::~ios,false
+72b73100,1,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+72b74100,1,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+72b75100,1,<EXTERNAL>::std::istream (GhidraClass)::~istream,false
+72b76100,1,<EXTERNAL>::std::istream (GhidraClass)::~istream,false
+72b77100,1,<EXTERNAL>::std::ostream (GhidraClass)::~ostream,false
+72b78100,1,<EXTERNAL>::std::ostream (GhidraClass)::~ostream,false
+72b79100,1,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+72b7a100,1,<EXTERNAL>::std::iostream (GhidraClass)::~iostream,false
+72b7b100,1,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Add,false
+72b7c100,1,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Add,false
+72b7d100,1,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Add,false
+72b7e100,1,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::Save,false
+72b7f100,1,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::SetBuffer,false
+72b80100,1,<EXTERNAL>::nn::prepo::PlayReport (GhidraClass)::PlayReport,false
+72b81100,1,<EXTERNAL>::pow,false
+72b82100,1,<EXTERNAL>::nn::fs::MountSaveData,false
+72b83100,1,<EXTERNAL>::nn::fs::EnsureSaveData,false
+72b84100,1,<EXTERNAL>::mbstowcs,false
+72b86100,1,<EXTERNAL>::operator.new,false
+72b87100,1,<EXTERNAL>::__errno_location,false
+72b88100,1,<EXTERNAL>::feof,false
+72b89100,1,<EXTERNAL>::ferror,false
+72b8a100,1,<EXTERNAL>::freopen,false
+72b8b100,1,<EXTERNAL>::getc,false
+72b8d100,1,<EXTERNAL>::strerror,false
+72b8e100,1,<EXTERNAL>::ungetc,false
+72b8f100,1,<EXTERNAL>::isspace,false
+72b90100,1,<EXTERNAL>::strtoul,false
+72b91100,1,<EXTERNAL>::longjmp,false
+72b92100,1,<EXTERNAL>::setjmp,false
+72b93100,1,<EXTERNAL>::isalnum,false
+72b94100,1,<EXTERNAL>::isalpha,false
+72b95100,1,<EXTERNAL>::iscntrl,false
+72b96100,1,<EXTERNAL>::localeconv,false
+72b97100,1,<EXTERNAL>::memchr,false
+72b98100,1,<EXTERNAL>::coshf,false
+72b99100,1,<EXTERNAL>::frexpf,false
+72b9a100,1,<EXTERNAL>::ldexpf,false
+72b9b100,1,<EXTERNAL>::log10f,false
+72b9c100,1,<EXTERNAL>::modf,false
+72b9d100,1,<EXTERNAL>::sinhf,false
+72b9e100,1,<EXTERNAL>::tanhf,false
+72b9f100,1,<EXTERNAL>::strcspn,false
+72ba0100,1,<EXTERNAL>::strncat,false
+72ba1100,1,<EXTERNAL>::strtod,false
+72ba2100,1,<EXTERNAL>::islower,false
+72ba3100,1,<EXTERNAL>::ispunct,false
+72ba4100,1,<EXTERNAL>::isupper,false
+72ba5100,1,<EXTERNAL>::isxdigit,false
+72ba6100,1,<EXTERNAL>::strpbrk,false
+72ba7100,1,<EXTERNAL>::strcoll,false
+72ba8100,1,<EXTERNAL>::nn::oe::GetDesiredLanguage,false
+72ba9100,1,<EXTERNAL>::swscanf,false
+72baa100,1,<EXTERNAL>::nn::util::SNPrintf,false
+72baf100,1,<EXTERNAL>::nn::util::ReferSymbol,false
+72bb0100,1,<EXTERNAL>::nn::util::BinaryFileHeader::GetFirstBlock,false
+72bb1100,1,<EXTERNAL>::nn::os::WaitSystemEvent,false
+72bb2100,1,<EXTERNAL>::nn::audio::AddDeviceSink,false
+72bb3100,1,<EXTERNAL>::nn::audio::AcquireMemoryPool,false
+72bb4100,1,<EXTERNAL>::nn::audio::OpenAudioRenderer,false
+72bb5100,1,<EXTERNAL>::nn::audio::ReleaseMemoryPool,false
+72bb6100,1,<EXTERNAL>::nn::audio::StopAudioRenderer,false
+72bb7100,1,<EXTERNAL>::nn::audio::CloseAudioRenderer,false
+72bb8100,1,<EXTERNAL>::nn::audio::GetMemoryPoolState,false
+72bb9100,1,<EXTERNAL>::nn::audio::StartAudioRenderer,false
+72bba100,1,<EXTERNAL>::nn::audio::SetDownMixParameter,false
+72bbb100,1,<EXTERNAL>::nn::audio::AddCircularBufferSink,false
+72bbc100,1,<EXTERNAL>::nn::audio::ReadCircularBufferSink,false
+72bbd100,1,<EXTERNAL>::nn::audio::RequestAttachMemoryPool,false
+72bbe100,1,<EXTERNAL>::nn::audio::RequestDetachMemoryPool,false
+72bbf100,1,<EXTERNAL>::nn::audio::RequestUpdateAudioRenderer,false
+72bc0100,1,<EXTERNAL>::nn::audio::SetDownMixParameterEnabled,false
+72bc1100,1,<EXTERNAL>::nn::audio::ExecuteAudioRendererRendering,false
+72bc2100,1,<EXTERNAL>::nn::audio::InitializeAudioRendererConfig,false
+72bc3100,1,<EXTERNAL>::nn::audio::IsValidAudioRendererParameter,false
+72bc4100,1,<EXTERNAL>::nn::audio::GetAudioRendererWorkBufferSize,false
+72bc5100,1,<EXTERNAL>::nn::audio::InitializeAudioRendererParameter,false
+72bc6100,1,<EXTERNAL>::nn::audio::GetAudioRendererElapsedFrameCount,false
+72bc7100,1,<EXTERNAL>::nn::audio::GetAudioRendererConfigWorkBufferSize,false
+72bc8100,1,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForPerformanceFrames,false
+72bc9100,1,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForCircularBufferSink,false
+72bca100,1,<EXTERNAL>::nn::os::ReceiveMessageQueue,false
+72bcb100,1,<EXTERNAL>::nn::os::TrySendMessageQueue,false
+72bcc100,1,<EXTERNAL>::nn::os::TryReceiveMessageQueue,false
+72bcd100,1,<EXTERNAL>::nn::os::ConvertToTick,false
+72bce100,1,<EXTERNAL>::nn::os::JamMessageQueue,false
+72bcf100,1,<EXTERNAL>::nn::audio::GetSinkNodeId,false
+72bd0100,1,<EXTERNAL>::nn::audio::GetSinkNodeId,false
+72bd1100,1,<EXTERNAL>::nn::audio::GetSubMixNodeId,false
+72bd2100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::MoveToNextFrame,false
+72bd3100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::SetBuffer,false
+72bd4100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::PerformanceInfo,false
+72bd5100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::~PerformanceInfo,false
+72bd6100,1,<EXTERNAL>::nn::audio::SetPerformanceFrameBuffer,false
+72bd7100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetEntries,false
+72bd8100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetFrameIndex,false
+72bd9100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetVoiceDropCount,false
+72bda100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::GetTotalProcessingTime,false
+72bdb100,1,<EXTERNAL>::nn::audio::PerformanceInfo (GhidraClass)::IsRenderingTimeLimitExceeded,false
+72bdd100,1,<EXTERNAL>::nn::audio::IsVoiceValid,false
+72bde100,1,<EXTERNAL>::nn::audio::SetVoicePitch,false
+72bdf100,1,<EXTERNAL>::nn::audio::GetVoiceNodeId,false
+72be0100,1,<EXTERNAL>::nn::audio::SetVoiceVolume,false
+72be1100,1,<EXTERNAL>::nn::audio::AcquireVoiceSlot,false
+72be2100,1,<EXTERNAL>::nn::audio::AppendWaveBuffer,false
+72be3100,1,<EXTERNAL>::nn::audio::ReleaseVoiceSlot,false
+72be4100,1,<EXTERNAL>::nn::audio::SetVoicePriority,false
+72be5100,1,<EXTERNAL>::nn::audio::GetVoicePlayState,false
+72be6100,1,<EXTERNAL>::nn::audio::SetVoiceMixVolume,false
+72be7100,1,<EXTERNAL>::nn::audio::SetVoiceMixVolume,false
+72be8100,1,<EXTERNAL>::nn::audio::SetVoicePlayState,false
+72be9100,1,<EXTERNAL>::nn::audio::SetVoiceSrcQuality,false
+72bea100,1,<EXTERNAL>::nn::audio::SetVoiceDestination,false
+72beb100,1,<EXTERNAL>::nn::audio::SetVoiceDestination,false
+72bec100,1,<EXTERNAL>::nn::audio::IsVoiceDroppedFlagOn,false
+72bed100,1,<EXTERNAL>::nn::audio::GetReleasedWaveBuffer,false
+72bee100,1,<EXTERNAL>::nn::audio::GetVoicePlayedSampleCount,false
+72bef100,1,<EXTERNAL>::nn::audio::SetVoiceBiquadFilterParameter,false
+72bf0100,1,<EXTERNAL>::nn::audio::SetAuxEnabled,false
+72bf1100,1,<EXTERNAL>::nn::audio::GetAuxSampleRate,false
+72bf2100,1,<EXTERNAL>::nn::audio::GetAuxSampleCount,false
+72bf3100,1,<EXTERNAL>::nn::audio::ReadAuxSendBuffer,false
+72bf4100,1,<EXTERNAL>::nn::audio::SetAuxInputOutput,false
+72bf5100,1,<EXTERNAL>::nn::audio::WriteAuxReturnBuffer,false
+72bf6100,1,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForAuxSendReturnBuffer,false
+72bf7100,1,<EXTERNAL>::nn::audio::AddAux,false
+72bf8100,1,<EXTERNAL>::nn::audio::AddAux,false
+72bf9100,1,<EXTERNAL>::nn::audio::RemoveAux,false
+72bfa100,1,<EXTERNAL>::nn::audio::RemoveAux,false
+72bfb100,1,<EXTERNAL>::nn::audio::RemoveDelay,false
+72bfc100,1,<EXTERNAL>::nn::audio::RemoveDelay,false
+72bfd100,1,<EXTERNAL>::nn::audio::SetDelayTime,false
+72bfe100,1,<EXTERNAL>::nn::audio::SetDelayInGain,false
+72bff100,1,<EXTERNAL>::nn::audio::SetDelayDryGain,false
+72c00100,1,<EXTERNAL>::nn::audio::SetDelayEnabled,false
+72c01100,1,<EXTERNAL>::nn::audio::IsDelayRemovable,false
+72c02100,1,<EXTERNAL>::nn::audio::SetDelayInputOutput,false
+72c03100,1,<EXTERNAL>::nn::audio::SetDelayFeedbackGain,false
+72c04100,1,<EXTERNAL>::nn::audio::SetDelayChannelSpread,false
+72c05100,1,<EXTERNAL>::nn::audio::SetDelayLowPassAmount,false
+72c06100,1,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForDelay,false
+72c07100,1,<EXTERNAL>::nn::audio::AddDelay,false
+72c08100,1,<EXTERNAL>::nn::audio::AddDelay,false
+72c09100,1,<EXTERNAL>::nn::audio::AddI3dl2Reverb,false
+72c0a100,1,<EXTERNAL>::nn::audio::AddI3dl2Reverb,false
+72c0b100,1,<EXTERNAL>::nn::audio::RemoveI3dl2Reverb,false
+72c0c100,1,<EXTERNAL>::nn::audio::RemoveI3dl2Reverb,false
+72c0d100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbDryGain,false
+72c0e100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbEnabled,false
+72c0f100,1,<EXTERNAL>::nn::audio::IsI3dl2ReverbRemovable,false
+72c10100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbRoomGain,false
+72c11100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbReverbGain,false
+72c12100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbRoomHfGain,false
+72c13100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbHfReference,false
+72c14100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbInputOutput,false
+72c15100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbReflectionsGain,false
+72c16100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbLateReverbDensity,false
+72c17100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbLateReverbDecayTime,false
+72c18100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbLateReverbDelayTime,false
+72c19100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbLateReverbDiffusion,false
+72c1a100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbReflectionDelayTime,false
+72c1b100,1,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForI3dl2Reverb,false
+72c1c100,1,<EXTERNAL>::nn::audio::SetI3dl2ReverbLateReverbHfDecayRatio,false
+72c1d100,1,<EXTERNAL>::nn::audio::RemoveReverb,false
+72c1e100,1,<EXTERNAL>::nn::audio::RemoveReverb,false
+72c1f100,1,<EXTERNAL>::nn::audio::SetReverbDryGain,false
+72c20100,1,<EXTERNAL>::nn::audio::SetReverbEnabled,false
+72c21100,1,<EXTERNAL>::nn::audio::SetReverbOutGain,false
+72c22100,1,<EXTERNAL>::nn::audio::IsReverbRemovable,false
+72c23100,1,<EXTERNAL>::nn::audio::SetReverbLateGain,false
+72c24100,1,<EXTERNAL>::nn::audio::SetReverbLateMode,false
+72c25100,1,<EXTERNAL>::nn::audio::SetReverbDecayTime,false
+72c26100,1,<EXTERNAL>::nn::audio::SetReverbEarlyGain,false
+72c27100,1,<EXTERNAL>::nn::audio::SetReverbEarlyMode,false
+72c28100,1,<EXTERNAL>::nn::audio::SetReverbColoration,false
+72c29100,1,<EXTERNAL>::nn::audio::SetReverbReverbGain,false
+72c2a100,1,<EXTERNAL>::nn::audio::SetReverbInputOutput,false
+72c2b100,1,<EXTERNAL>::nn::audio::SetReverbPredelayTime,false
+72c2c100,1,<EXTERNAL>::nn::audio::GetRequiredBufferSizeForReverb,false
+72c2d100,1,<EXTERNAL>::nn::audio::SetReverbHighFrequencyDecayRatio,false
+72c2e100,1,<EXTERNAL>::nn::audio::AddReverb,false
+72c2f100,1,<EXTERNAL>::nn::audio::AddReverb,false
+72c30100,1,<EXTERNAL>::nn::fs::FlushFile,false
+72c31100,1,<EXTERNAL>::nn::fs::SetPriorityOnCurrentThread,false
+72c32100,1,<EXTERNAL>::nn::os::CreateThread,false
+72c33100,1,<EXTERNAL>::nn::os::SetThreadNamePointer,false
+72c34100,1,<EXTERNAL>::nn::audio::AcquireFinalMix,false
+72c35100,1,<EXTERNAL>::nn::audio::ReleaseFinalMix,false
+72c36100,1,<EXTERNAL>::nn::audio::AcquireSubMix,false
+72c37100,1,<EXTERNAL>::nn::audio::ReleaseSubMix,false
+72c38100,1,<EXTERNAL>::nn::audio::SetSubMixVolume,false
+72c39100,1,<EXTERNAL>::nn::audio::SetSubMixMixVolume,false
+72c3a100,1,<EXTERNAL>::nn::audio::SetSubMixMixVolume,false
+72c3b100,1,<EXTERNAL>::nn::audio::SetSubMixDestination,false
+72c3c100,1,<EXTERNAL>::nn::audio::SetSubMixDestination,false

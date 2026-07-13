@@ -3,6 +3,7 @@
 import json
 import math
 import os
+import subprocess as sp
 import sys
 from pathlib import Path
 from typing import (
@@ -14,6 +15,7 @@ from typing import (
     Optional,
     TypedDict,
 )
+import cxxfilt
 
 Library = Dict[str, Any]
 PrecompiledHeader = Dict[str, Any]
@@ -29,7 +31,7 @@ class Object:
     def __init__(self, base_path: str, completed: bool) -> None:
         self.src_path: Path = SOURCE_PATH / str(base_path+".cpp")
         self.asm_path: Optional[Path] = BUILD_PATH / str(base_path + ".cpp.obj")
-        self.target_asm_path: Optional[Path] = str(base_path + '.o')
+        self.target_asm_path: Optional[Path] = "src/" + str(base_path + '.o')
         
         self.name = self.getName()
         self.completed = completed
@@ -40,7 +42,7 @@ class Object:
         return splitstr[0].split('.')[0]
 
 #* "main": Object("main", False) or if the file is in folder Object("Actor/main", False)
-Object_List: Dict[str, Object] = {"main": Object("main", False)}
+Object_List: Dict[str, Object] = {"ActorUnk_001": Object("ActorUnk_001", False)}
 class ProjectConfig:
     def __init__(self) -> None:
         # Paths
@@ -105,7 +107,7 @@ def check_path_case(path: Path):
         print(f"⚠️  Case mismatch: expected={path} actual={curr}")
 
 # Generate objdiff.json
-def generate_objdiff_config() -> None:
+def generate_objdiff_config(FunctionList: list[list[str]] = None) -> None:
     # Load existing objdiff.json
     existing_units = {}
     if Path(ROOT / "build/objdiff.json").is_file():
@@ -144,7 +146,8 @@ def generate_objdiff_config() -> None:
     }
 
     def add_unit(
-        build_obj: Object
+        build_obj: Object,
+        FunctionList: list[list[str]] = None
     ) -> None:
         obj_path, obj_name, target_path = build_obj.asm_path, build_obj.name, build_obj.target_asm_path
         unit_config: Dict[str, Any] = {
@@ -153,21 +156,26 @@ def generate_objdiff_config() -> None:
             "base_path": obj_path,
             "scratch": {
                 "platform": "switch",
-                "compiler": "clang-8.0.0",
-                "ctx_path": ".",
-                "build_ctx": False
+                "compiler": "clang-8.0.0"
             },
             "metadata": {
                 "complete": False,
                 "reverse_fn_order": False,
                 "source_path": build_obj.src_path
+            },
+            "symbol_mappings": {
             }
         }
 
+        if not FunctionList == None:
+            for i in range(FunctionList[0].__len__()):
+                unit_config["symbol_mappings"][FunctionList[0][i]] = FunctionList[1][i]
+                print(FunctionList[0][i] + " -> " + FunctionList[1][i])
+
         # Preserve existing symbol mappings
-        existing_unit = existing_units.get(obj_name)
-        if existing_unit is not None:
-            unit_config["symbol_mappings"] = existing_unit.get("symbol_mappings")
+        # existing_unit = existing_units.get(obj_name)
+        # if existing_unit is not None:
+        #     unit_config["symbol_mappings"] = existing_unit.get("symbol_mappings")
 
         obj = Object_List.get(build_obj.name)
         if obj is None:
@@ -182,7 +190,7 @@ def generate_objdiff_config() -> None:
         objdiff_config["units"].append(unit_config)
 
     for obj in Object_List:
-        add_unit(Object_List[obj])
+        add_unit(Object_List[obj], FunctionList)
 
     def cleandict(d):
         if isinstance(d, dict):
@@ -199,6 +207,34 @@ def generate_objdiff_config() -> None:
             return str(input).replace(os.sep, "/") if input else ""
 
         json.dump(cleandict(objdiff_config), w, indent=2, default=unix_path)
+
+def demangle(path: Path) -> list[list[str]]:
+    result = str(sp.run(["nm", path], capture_output=True, text=True))
+    demangled = [[], []]
+    DemangleList: list[str] = []
+    MangledList: list[str] = []
+    for i in range(result.__len__()):
+        if i == result.__len__() - 2:
+            break
+        nextsep = result[i] + result[i+1] + result[i+2]
+        if nextsep == '_ZN':
+            c = i
+            current = ""
+            while not (result[c] == "\\" and result[c + 1] == "n"):
+                if not result[c] + result[c+1] == 'NN' or not result[c] + result[c-1] == 'NN':
+                    current += result[c]
+                    c += 1
+                    continue
+                c+=1
+            dmg = cxxfilt.demangle(current)
+            dmg = dmg.split('::')[1]
+            dmg = dmg.split('(')[0]
+            DemangleList.append(dmg)
+            MangledList.append(current)
+    demangled[0] = DemangleList
+    demangled[1] = MangledList
+    
+    return demangled
 
 if __name__ == '__main__':
     generate_objdiff_config()

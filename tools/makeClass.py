@@ -5,6 +5,7 @@ from pathlib import Path
 from capstone import * 
 import subprocess as sp
 import os
+import objdiff as obj
 
 ROOT = Path(__file__).parent.parent
 
@@ -13,18 +14,18 @@ FN_PATH = ROOT / 'data' / 'rom_extract.csv'
 BUILD = ROOT / 'build' / 'src'
 INC_PATH = ROOT / 'includes'
 SRC_PATH = ROOT / 'src'
+BUILD_DCP = ROOT / 'build' / 'CMakeFiles' / 'dread.dir' / 'src'
 
 CODE = Path("./data/main.nso").read_bytes()
-
 
 md = Cs(CS_ARCH_ARM64, CS_MODE_ARM) 
 md.skipdata = True
 
-deleteSrc = False
 generateSourceAndHeader = False
 
 other_class_fn_name: list[str] = []
 fn_index: int = 0
+
 
 class Function:
     def __init__(self, adress: int, size: int, symbol: str, already_exists: bool, index: int) -> None:
@@ -69,8 +70,9 @@ namespace: str = ""
 create_class = False
 
 func: list[list[str]] = ['.section .text']
-
+genhppandcpp = True
 index = 0
+write = True
 for namespace_l in FunctionList:
     if namespace_l == []:
         continue
@@ -89,10 +91,6 @@ for namespace_l in FunctionList:
             os.remove(BUILD / str(fn.namespace+'.s'))
         if Path(BUILD / str(fn.namespace+'.o')).exists():
             os.remove(BUILD / str(fn.namespace+'.o'))
-        if Path(INC_PATH / str(fn.namespace+'.h')).exists():
-            os.remove(INC_PATH / str(fn.namespace+'.h'))
-        if Path(SRC_PATH / str(fn.namespace+'.cpp')).exists():
-            os.remove(SRC_PATH / str(fn.namespace+'.cpp'))
 
         #! CREATE ASM FILE
         func.append(f'\n\n.global {fn.asm_name}\n\n{fn.asm_name}:\n')
@@ -121,14 +119,24 @@ for namespace_l in FunctionList:
 
     sp.run(['aarch64-linux-gnu-as', BUILD / str(namespace+'.s'), "-o", BUILD / str(namespace+'.o')])
 
-    #! WRITE HEADER 
-    header_str += '\n};'
-    with open(INC_PATH / str(namespace+'.h'), 'w') as f:
-        f.write(header_str)
+    if Path(INC_PATH / str(fn.namespace+'.h')).exists():
+            genhppandcpp = False
+    if Path(SRC_PATH / str(fn.namespace+'.cpp')).exists():
+            genhppandcpp = False
 
-    #! WRITE SOURCE
-    with open(SRC_PATH / str(namespace+'.cpp'), 'w') as f:
-        f.write(src_str)
+    if genhppandcpp:
+        #! WRITE HEADER 
+        header_str += '\n};'
+        with open(INC_PATH / str(namespace+'.h'), 'w') as f:
+            f.write(header_str)
+
+        #! WRITE SOURCE
+        with open(SRC_PATH / str(namespace+'.cpp'), 'w') as f:
+            f.write(src_str)
+
+        sp.run(['ninja', "-C", ROOT / 'build'])
+        demangled_list = obj.demangle(Path(BUILD_DCP / str(namespace+'.cpp.obj')))
+        obj.generate_objdiff_config(demangled_list)
 
     index += 1
     header_str: str = ""
