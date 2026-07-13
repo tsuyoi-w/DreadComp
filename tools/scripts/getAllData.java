@@ -12,11 +12,12 @@ import ghidra.app.script.GhidraScript;
 import ghidra.program.model.address.AddressSetView;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.FunctionManager;
+import ghidra.program.model.listing.Parameter;
 import ghidra.program.model.listing.Program;
 
 public class getAllData extends GhidraScript {
 
-    final String ex_rom_path = "put csv here until i make it auto";
+    final String ex_rom_path = "\\\\wsl.localhost\\DreadComp\\home\\dreadcomp\\projects\\Metroid\\DreadComp\\data\\rom_extract.csv";
     Boolean ex_rom = true;
     String ex_rom_str = "";
 
@@ -40,8 +41,16 @@ public class getAllData extends GhidraScript {
 
                 String namespace = (!func.getParentNamespace().toString().equals("Global")) ? func.getParentNamespace().toString() + "::" : "";
                 String target = (func.getParentNamespace().toString().equals(targetNS)) ? ",true" : ",false";
+                String parameter = "(";
+                int i = 1;
+                for(Parameter pm : func.getParameters())
+                {
+                    String virgule = (func.getParameterCount() == i) ? "" : ",";
+                    parameter += pm.getDataType() + " param_" + i + virgule;
+                    i++;
+                }
 
-                String row = adrr + "," + size + "," + namespace + func.getName() + target + '\n';
+                String row = adrr + "," + size + ",\"" + namespace + func.getName() + parameter + ")\"" + target + '\n';
                 ex_rom_str+=row;
             }
             Files.writeString(Path.of(ex_rom_path), ex_rom_str);       

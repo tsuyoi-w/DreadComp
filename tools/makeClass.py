@@ -26,19 +26,16 @@ generateSourceAndHeader = False
 other_class_fn_name: list[str] = []
 fn_index: int = 0
 
-
 class Function:
     def __init__(self, adress: int, size: int, symbol: str, already_exists: bool, index: int) -> None:
         index = symbol.split('::').__len__() - 1
         self.namespace = symbol.split('::')[0]
-        self.name = symbol.split('::')[index]
+        self.name = symbol.split('::')[index].split('(')[0]
+        self.parameters = ')' if symbol.split('::')[index].split(',').__len__() <= 1 else symbol.split('::')[index].split('(')[1].replace('ulong', 'unsigned long')
         self.adress = adress
         self.size = size
         self.asm_name = self.name
-        if self.name.startswith('~'):
-            self.asm_name = '"' + self.name + '"'
-        if already_exists:
-            self.asm_name += '_' + str(index)
+        self.asm_name = '"' + self.name + "(" + self.parameters + '"'
  
 ns_index = 0
 FunctionList = [[] for _ in range(999)]
@@ -76,10 +73,11 @@ write = True
 for namespace_l in FunctionList:
     if namespace_l == []:
         continue
+    Demangleds : list[str] = []
     for fn in namespace_l:
         if not create_class:
-            header_str = f"#pragma once\nclass {fn.namespace}" + "{\n"
-            src_str = f'#include "{fn.namespace}.h"\n'
+            header_str = f"#pragma once\nclass ActorUnk_002" + "{};" + f"\nclass {fn.namespace}" + "{\n"
+            src_str = f'#include <{fn.namespace}.h>\n'
             namespace = fn.namespace
             create_class = True
 
@@ -96,20 +94,20 @@ for namespace_l in FunctionList:
         func.append(f'\n\n.global {fn.asm_name}\n\n{fn.asm_name}:\n')
         for i in md.disasm(data, fn.adress):
             func.append(f"\t{i.mnemonic} {i.op_str}\n")
-        
+        Demangleds.append(fn.asm_name.replace('"', ''))
         #! CREATE HEADER FILE
         if fn.name == fn.namespace or fn.name == '~' + fn.namespace:
-            header_str += f'\n\t{fn.name}();'
+            header_str += f'\n\t{fn.name}({fn.parameters};'
         elif fn.name.startswith('vfunc'):
-            header_str += f'\n\tvirtual void {fn.name}();'
+            header_str += f'\n\tvirtual void {fn.name}({fn.parameters};'
         else:
-            header_str += f'\n\tvoid {fn.name}();'
+            header_str += f'\n\tvoid {fn.name}({fn.parameters};'
 
         #! CREATE SOURCE FILE
         if fn.name == fn.namespace or fn.name == '~' + fn.namespace:
-            src_str += f'\n {fn.namespace}::{fn.name}()' + '{}'
+            src_str += f'\n {fn.namespace}::{fn.name}({fn.parameters}' + '{}'
         else:
-            src_str += f'void {fn.namespace}::{fn.name}()' + '{}'
+            src_str += f'void {fn.namespace}::{fn.name}({fn.parameters}' + '{}'
 
     #! WRITE FN and COMPILE ASM
     func_str = "".join(func)
@@ -135,7 +133,7 @@ for namespace_l in FunctionList:
             f.write(src_str)
 
         sp.run(['ninja', "-C", ROOT / 'build'])
-        demangled_list = obj.demangle(Path(BUILD_DCP / str(namespace+'.cpp.obj')))
+        demangled_list = obj.demangle(Path(BUILD_DCP / str(namespace+'.cpp.obj')),Demangleds )
         obj.generate_objdiff_config(demangled_list)
 
     index += 1
