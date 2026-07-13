@@ -31,7 +31,7 @@ class Function:
         index = symbol.split('::').__len__() - 1
         self.namespace = symbol.split('::')[0]
         self.name = symbol.split('::')[index].split('(')[0]
-        self.parameters = ')' if symbol.split('::')[index].split(',').__len__() <= 1 else symbol.split('::')[index].split('(')[1].replace('ulong', 'unsigned long')
+        self.parameters = ')' if symbol.split('::')[index].split(',').__len__() <= 1 else symbol.split('::')[index].split('(')[1].split(',', 1)[1].replace('ulong', 'unsigned long')
         self.adress = adress
         self.size = size
         self.asm_name = self.name
@@ -70,13 +70,14 @@ func: list[list[str]] = ['.section .text']
 genhppandcpp = True
 index = 0
 write = True
+
 for namespace_l in FunctionList:
     if namespace_l == []:
         continue
     Demangleds : list[str] = []
     for fn in namespace_l:
         if not create_class:
-            header_str = f"#pragma once\nclass ActorUnk_002" + "{};" + f"\nclass {fn.namespace}" + "{\n"
+            header_str = f"#pragma once\n class ActorUnk_002" + "{};" + f"\nclass {fn.namespace}" + "{\n"
             src_str = f'#include <{fn.namespace}.h>\n'
             namespace = fn.namespace
             create_class = True
@@ -134,7 +135,6 @@ for namespace_l in FunctionList:
 
         sp.run(['ninja', "-C", ROOT / 'build'])
         demangled_list = obj.demangle(Path(BUILD_DCP / str(namespace+'.cpp.obj')))
-        print(Demangleds)
         obj.generate_objdiff_config(Demangleds, demangled_list)
 
     index += 1

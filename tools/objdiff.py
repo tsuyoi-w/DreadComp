@@ -167,15 +167,14 @@ def generate_objdiff_config(params: list[str], FunctionList: list[list[str]] = N
             "symbol_mappings": {
             }
         }
-
+        
         if not FunctionList == None:
             for i in range(FunctionList[0].__len__()):
                 fonction = ''
                 for x in params:
-                    if FunctionList[0][i] == x.split('(')[0]:
+                    if FunctionList[0][i].split(' ')[0] == x.split(' ')[0]:
                         fonction = x
                 unit_config["symbol_mappings"][fonction] = FunctionList[1][i]
-                print(FunctionList[0][i] + " -> " + FunctionList[1][i])
 
         # Preserve existing symbol mappings
         # existing_unit = existing_units.get(obj_name)
@@ -232,8 +231,7 @@ def demangle(path: Path) -> list[list[str]]:
                     continue
                 c+=1
             dmg = cxxfilt.demangle(current)
-            dmg = dmg.split('::')[1]
-            dmg = dmg.split('(')[0]
+            dmg = dmg.split('::')[1].replace(',', '')
             DemangleList.append(dmg)
             MangledList.append(current)
     demangled[0] = DemangleList
