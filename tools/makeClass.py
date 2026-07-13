@@ -133,8 +133,9 @@ for namespace_l in FunctionList:
             f.write(src_str)
 
         sp.run(['ninja', "-C", ROOT / 'build'])
-        demangled_list = obj.demangle(Path(BUILD_DCP / str(namespace+'.cpp.obj')),Demangleds )
-        obj.generate_objdiff_config(demangled_list)
+        demangled_list = obj.demangle(Path(BUILD_DCP / str(namespace+'.cpp.obj')))
+        print(Demangleds)
+        obj.generate_objdiff_config(Demangleds, demangled_list)
 
     index += 1
     header_str: str = ""

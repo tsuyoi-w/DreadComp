@@ -107,7 +107,7 @@ def check_path_case(path: Path):
         print(f"⚠️  Case mismatch: expected={path} actual={curr}")
 
 # Generate objdiff.json
-def generate_objdiff_config(FunctionList: list[list[str]] = None) -> None:
+def generate_objdiff_config(params: list[str], FunctionList: list[list[str]] = None) -> None:
     # Load existing objdiff.json
     existing_units = {}
     if Path(ROOT / "build/objdiff.json").is_file():
@@ -147,6 +147,7 @@ def generate_objdiff_config(FunctionList: list[list[str]] = None) -> None:
 
     def add_unit(
         build_obj: Object,
+        params: list[str],
         FunctionList: list[list[str]] = None
     ) -> None:
         obj_path, obj_name, target_path = build_obj.asm_path, build_obj.name, build_obj.target_asm_path
@@ -169,7 +170,12 @@ def generate_objdiff_config(FunctionList: list[list[str]] = None) -> None:
 
         if not FunctionList == None:
             for i in range(FunctionList[0].__len__()):
-                unit_config["symbol_mappings"][FunctionList[0][i]] = FunctionList[1][i]
+                fonction = ''
+                for x in params:
+                    if FunctionList[0][i] == x.split('(')[0]:
+                        fonction = x
+                unit_config["symbol_mappings"][fonction] = FunctionList[1][i]
+                print(FunctionList[0][i] + " -> " + FunctionList[1][i])
 
         # Preserve existing symbol mappings
         # existing_unit = existing_units.get(obj_name)
@@ -189,7 +195,7 @@ def generate_objdiff_config(FunctionList: list[list[str]] = None) -> None:
         objdiff_config["units"].append(unit_config)
 
     for obj in Object_List:
-        add_unit(Object_List[obj], FunctionList)
+        add_unit(Object_List[obj], params, FunctionList)
 
     def cleandict(d):
         if isinstance(d, dict):
@@ -207,7 +213,7 @@ def generate_objdiff_config(FunctionList: list[list[str]] = None) -> None:
 
         json.dump(cleandict(objdiff_config), w, indent=2, default=unix_path)
 
-def demangle(path: Path, demangleds: list[str]) -> list[list[str]]:
+def demangle(path: Path) -> list[list[str]]:
     result = str(sp.run(["nm", path], capture_output=True, text=True))
     demangled = [[], []]
     DemangleList: list[str] = []
@@ -225,8 +231,12 @@ def demangle(path: Path, demangleds: list[str]) -> list[list[str]]:
                     c += 1
                     continue
                 c+=1
+            dmg = cxxfilt.demangle(current)
+            dmg = dmg.split('::')[1]
+            dmg = dmg.split('(')[0]
+            DemangleList.append(dmg)
             MangledList.append(current)
-    demangled[0] = demangleds
+    demangled[0] = DemangleList
     demangled[1] = MangledList
     
     return demangled

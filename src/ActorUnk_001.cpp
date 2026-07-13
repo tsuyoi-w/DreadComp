@@ -1,8 +1,8 @@
-#include <ActorUnk_001.h>
+#include "ActorUnk_001.h"
 #include "sched.h"
 
 ActorUnk_001::ActorUnk_001() {}
-ActorUnk_001::ActorUnk_001(long param_1, ActorUnk_002 *param_2, int param_3, int param_4) {}
+ActorUnk_001::ActorUnk_001(long param_1, ActorUnk_002* param_2, int param_3, int param_4) {}
 ActorUnk_001::~ActorUnk_001() {}
 void ActorUnk_001::vfunc_08() {
     Actor_002->vfunc48(this->mUnk_10);
@@ -24,7 +24,7 @@ bool ActorUnk_001::vfunc_00() {
     return mUnk_10 != 0;
 }
 void ActorUnk_001::vfunc_10() {
-    *(int *)this = 3;
+    *(int*)this = 3;
 }
 void ActorUnk_001::vfunc_18() {}
 void ActorUnk_001::vfunc_20() {}
