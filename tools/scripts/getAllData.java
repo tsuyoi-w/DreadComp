@@ -16,7 +16,7 @@ import ghidra.program.model.listing.Program;
 
 public class getAllData extends GhidraScript {
 
-    final String ex_rom_path = "\\\\wsl.localhost/DreadComp/home/dreadcomp/projects/Metroid/DreadComp/data/rom_extract.csv";
+    final String ex_rom_path = "put csv here until i make it auto";
     Boolean ex_rom = true;
     String ex_rom_str = "";
 
