@@ -29,7 +29,7 @@ public:
     virtual void vfunc_30(unsigned long param_2);
     virtual bool vfunc_00();
     virtual void vfunc_10();
-    virtual void vfunc_18();
-    virtual void vfunc_20();
+    virtual long vfunc_18();
+    virtual long vfunc_20();
     virtual long vfunc_28();
 }; // SIZE 0x28
