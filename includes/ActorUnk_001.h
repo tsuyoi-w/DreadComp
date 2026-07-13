@@ -31,5 +31,5 @@ public:
     virtual void vfunc_10();
     virtual void vfunc_18();
     virtual void vfunc_20();
-    virtual void vfunc_28();
+    virtual long vfunc_28();
 }; // SIZE 0x28
