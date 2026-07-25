@@ -20,7 +20,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 file(GLOB_RECURSE SOURCES_GAME CONFIGURE_DEPENDS 
 ${PROJECT_SOURCE_DIR}/src/*.cpp ${PROJECT_SOURCE_DIR}/src/*.c 
 ${PROJECT_SOURCE_DIR}/src/*.hpp ${PROJECT_SOURCE_DIR}/src/*.h)
-add_library(dread OBJECT ${SOURCES_GAME})
+add_executable(dread ${SOURCES_GAME})
 target_include_directories(dread PRIVATE "includes/")
 target_compile_definitions(dread PRIVATE NON_MATCHING)
 target_compile_options(dread PRIVATE -fno-rtti -fno-exceptions)
