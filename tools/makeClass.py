@@ -9,7 +9,7 @@ import objdiff as obj
 
 ROOT = Path(__file__).parent.parent
 
-FN_PATH = ROOT / 'data' / 'rom_extract.csv'
+FN_PATH = ROOT / 'data' / 'function.csv'
 
 BUILD = ROOT / 'build' / 'src'
 INC_PATH = ROOT / 'includes'
@@ -96,19 +96,20 @@ for namespace_l in FunctionList:
         for i in md.disasm(data, fn.adress):
             func.append(f"\t{i.mnemonic} {i.op_str}\n")
         Demangleds.append(fn.asm_name.replace('"', ''))
+        if genhppandcpp:
         #! CREATE HEADER FILE
-        if fn.name == fn.namespace or fn.name == '~' + fn.namespace:
-            header_str += f'\n\t{fn.name}({fn.parameters};'
-        elif fn.name.startswith('vfunc'):
-            header_str += f'\n\tvirtual void {fn.name}({fn.parameters};'
-        else:
-            header_str += f'\n\tvoid {fn.name}({fn.parameters};'
+            if fn.name == fn.namespace or fn.name == '~' + fn.namespace:
+                header_str += f'\n\t{fn.name}({fn.parameters};'
+            elif fn.name.startswith('vfunc'):
+                header_str += f'\n\tvirtual void {fn.name}({fn.parameters};'
+            else:
+                header_str += f'\n\tvoid {fn.name}({fn.parameters};'
 
-        #! CREATE SOURCE FILE
-        if fn.name == fn.namespace or fn.name == '~' + fn.namespace:
-            src_str += f'\n {fn.namespace}::{fn.name}({fn.parameters}' + '{}'
-        else:
-            src_str += f'void {fn.namespace}::{fn.name}({fn.parameters}' + '{}'
+            #! CREATE SOURCE FILE
+            if fn.name == fn.namespace or fn.name == '~' + fn.namespace:
+                src_str += f'\n {fn.namespace}::{fn.name}({fn.parameters}' + '{}'
+            else:
+                src_str += f'void {fn.namespace}::{fn.name}({fn.parameters}' + '{}'
 
     #! WRITE FN and COMPILE ASM
     func_str = "".join(func)

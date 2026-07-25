@@ -15,6 +15,8 @@ import urllib.request
 from clean import clean
 import objdiff as obj
 
+from common.setup_common import install_viking
+
 ROOT = Path(__file__).parent.parent
 TARGET_PATH = ROOT / 'data' / 'main.nso'
 TARGET_ELF_PATH = ROOT / 'data' / 'main.elf'
@@ -202,10 +204,11 @@ def main():
 
     if not args.build_only:
         #TODO: obj.generate_objdiff_config()
+        install_viking()
         if not args.project_only:
             prepare_executable(args.original_nso)
         set_up_compiler("9.0.0")
     create_build_dir()
     
 if __name__ == "__main__":
-    main()
+    install_viking()
