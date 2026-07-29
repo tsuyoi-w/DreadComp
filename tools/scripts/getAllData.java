@@ -7,7 +7,6 @@
 
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.Iterator;
 
 import ghidra.app.script.GhidraScript;
@@ -40,23 +39,22 @@ public class getAllData extends GhidraScript {
         SymbolTable sym_table = current.getSymbolTable();
 
         if (fn) {
-            ArrayList<String> fnName = new ArrayList<>();
             for (Function func : fnmngr.getFunctions(true)) {
-
+                if (func.isThunk() || func.isExternal()) {
+                    continue; // ou traiter différemment
+                }
                 AddressSetView body = func.getBody();
 
-                Long base_addr = Long.parseLong(body.getMinAddress().toString(), 16);
-                String adrr = Long.toHexString(base_addr);
+                String adrr = body.getMinAddress().toString();
 
                 String size = Long.toString(body.getNumAddresses());
 
-                String namespace = (!func.getParentNamespace().toString().equals("Global"))
-                        ? func.getParentNamespace().toString() + "::"
-                        : "";
+                // String namespace = (!func.getParentNamespace().toString().equals("Global"))
+                //         ? func.getParentNamespace().toString() + "::"
+                //         : "";
 
                 String row = "0x" + adrr + ",U," + size + "," + '\n';
                 fn_str += row;
-                fnName.add(namespace + func.getName().replace(",", ";"));
             }
             Files.writeString(Path.of(fn_path), fn_str);
         }

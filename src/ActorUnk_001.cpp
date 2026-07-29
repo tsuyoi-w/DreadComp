@@ -10,6 +10,7 @@ ActorUnk_001::ActorUnk_001() {
         this->mUnk_18 = 0;
     }
 }
+
 ActorUnk_001::ActorUnk_001(long param_1, ActorUnk_002* param_2, int param_3, int param_4) {
     this->Actor_002 = param_2;
     this->mUnk_10 = 0;
@@ -24,6 +25,7 @@ ActorUnk_001::ActorUnk_001(long param_1, ActorUnk_002* param_2, int param_3, int
         this->mUnk_10 = (long)param_2->vfunc40(param_1, param_3, param_4);
     }
 }
+
 ActorUnk_001::~ActorUnk_001() {
     if (this->mUnk_10 != 0) {
         Actor_002->vfunc48(this->mUnk_10);
