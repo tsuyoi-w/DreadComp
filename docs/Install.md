@@ -36,7 +36,6 @@ Next, you'll need to acquire the **original 2.1.0** main **NSO executable**.
 
 - To dump it from a Switch, follow the instructions on the wiki (I suggest putting it in game/)
 - You do not need to dump the entire game (RomFS + ExeFS + DLC). Just dumping the 2.1.0 ExeFS is sufficient
-- The decompressed 2.1.0 NSO has the following SHA256 hash: c2c8d1184eee861052c6f02c4820b51c1ae289fd7f1920522726c405b5254cd3
 
 ## Setup the repo
 
@@ -72,10 +71,12 @@ If something goes wrong, follow the instructions given to you by the script
 To start the build run:
 
 ```shell
-ninja -C build
+tools/build.py
 ```
 
-It probably won’t be necessary in the future (!soon). I plan to make an objdiff that will build alone the changes by saving
+this will build with ninja, copy the json on the root and if you're on **windows with wsl** convert the compile_commands.json to windows path
+
+(for more info with windows go [here](Windows.md))
 
 ## Setup ghidra
 
@@ -96,7 +97,7 @@ i also suggest:
 - Better Comments
 - A theme you like (i use tokyo night or dark 2026)
 
-Next you need some settings you can do it by copy/pasting both .json to a .vscode folder
+Next you need some settings you can do it by copy/pasting the .vscode in /docs to the root 
 
 ## Contributing
 

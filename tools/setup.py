@@ -5,7 +5,6 @@ import hashlib
 from pathlib import Path
 import subprocess
 from typing import Optional
-import platform
 from pathlib import Path
 import subprocess
 import tarfile
@@ -20,8 +19,6 @@ ROOT = Path(__file__).parent.parent
 TARGET_PATH = ROOT / 'data' / 'main.nso'
 TARGET_ELF_PATH = ROOT / 'data' / 'main.elf'
 TOOL_ROOT = ROOT / 'toolchain'
-
-SYSTEM = 'linux' if platform.system() == 'Linux' else 'macos' 
 
 def prepare_executable(original_nso: Optional[Path]):
 
@@ -99,11 +96,11 @@ def main():
     if args.clean:
         clean()
 
-    if not args.project_only:
-        prepare_executable(args.original_nso)
+    # if not args.project_only:
+    #     prepare_executable(args.original_nso)
     set_up_compiler("9.0.0")
-    install_viking()
-    create_build_dir()
+    #  install_viking()
+    # create_build_dir()
     
 if __name__ == "__main__":
     main()

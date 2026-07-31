@@ -1,17 +1,5 @@
 #pragma once
-class ActorUnk_002 {
-public:
-    virtual void vfunc00(int);
-    virtual void vfunc08(int);
-    virtual void vfunc10(int);
-    virtual void vfunc18(int);
-    virtual void vfunc20(int);
-    virtual void vfunc28(int);
-    virtual void vfunc30(int);
-    virtual void vfunc38(int);
-    virtual void* vfunc40(unsigned long, int, int);
-    virtual void vfunc48(long);
-};
+#include "ActorUnk_002.h"
 class ActorUnk_001 {
 public:
     /* vtable 0x0 */

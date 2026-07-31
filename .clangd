@@ -1,0 +1,4 @@
+Diagnostics:
+  Suppress:
+    - unused-includes
+    - -Wsign-compare
