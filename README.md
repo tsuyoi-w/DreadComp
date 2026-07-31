@@ -10,6 +10,9 @@
 
 For now dont follow this, you can read [CONTRIBUTING.md](docs/Contributing.md) if you want to see what to do
 
+i'm bad at english so the readme will probably contains english error. I'm sorry for that
+you can PR with better readme or drop it on discord
+
 ## How to install
 
 See [INSTALL.md](docs/Install.md) for instructions on how to install the project.

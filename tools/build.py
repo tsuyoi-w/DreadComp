@@ -26,7 +26,12 @@ def fixCompileCommandPath():
         f.write(data)
 
 def main():
-    os.remove(COMPILE_COMMANDS_ROOT)
+    if Path.exists(COMPILE_COMMANDS_ROOT):
+        os.remove(COMPILE_COMMANDS_ROOT)
+        
+    if not Path.exists(COMPILE_COMMANDS):
+        subprocess.check_call(
+                "cmake -GNinja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE=toolchain/ToolchainNX64.cmake -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -B build/".split(" "))
 
     subprocess.call(['ninja', '-C', './build'])
 

@@ -97,7 +97,17 @@ i also suggest:
 - Better Comments
 - A theme you like (i use tokyo night or dark 2026)
 
-Next you need some settings you can do it by copy/pasting the .vscode in /docs to the root 
+Next you need some settings you can do it by copy/paste the .vscode in /docs to the root
+
+with linux you only need the settings.json
+
+with windows for the c++ extension use **Clangd** not the one from microsoft then copy/paste the folder and you only need c_cpp_properties.json
+you can also clean the settings.json and add our wsl instance at default terminal with :
+
+```json
+"terminal.integrated.defaultProfile.windows": "<INSTANCE> (WSL)"
+```
+and with MacOS i dont have one, so idk
 
 ## Contributing
 
