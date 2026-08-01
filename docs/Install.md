@@ -76,8 +76,6 @@ tools/build.py
 
 this will build with ninja, copy the json on the root and if you're on **windows with wsl** convert the compile_commands.json to windows path
 
-(for more info with windows go [here](Windows.md))
-
 ## Setup ghidra
 
 you can follow [ghidra setup](ghidra.md) guide
@@ -105,7 +103,7 @@ with windows for the c++ extension use **Clangd** not the one from microsoft the
 you can also clean the settings.json and add our wsl instance at default terminal with :
 
 ```json
-"terminal.integrated.defaultProfile.windows": "<INSTANCE> (WSL)"
+"terminal.integrated.defaultProfile.windows": "<INSTANCE_NAME> (WSL)"
 ```
 and with MacOS i dont have one, so idk
 

@@ -28,6 +28,7 @@ tools/objdiff.py
 .vscode/
 .DS_Store
 .cache/
+!docs/.vscode/
 
 # IDA
 *.id0

@@ -27,7 +27,7 @@ other_class_fn_name: list[str] = []
 fn_index: int = 0
 
 class Function:
-    def __init__(self, adress: int, size: int, symbol: str, already_exists: bool, index: int) -> None:
+    def __init__(self, adress: int, size: int, symbol: str, index: int) -> None:
         index = symbol.split('::').__len__() - 1
         self.namespace = symbol.split('::')[0]
         self.name = symbol.split('::')[index].split('(')[0]

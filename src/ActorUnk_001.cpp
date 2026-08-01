@@ -22,7 +22,6 @@ ActorUnk_001::ActorUnk_001(long param_1, ActorUnk_002* param_2, int param_3, int
             param_2 = FUN_7100083990();
             this->Actor_002 = param_2;
         }
-
         this->mUnk_10 = (long)param_2->vfunc_40(param_1, param_3, param_4);
     }
 }

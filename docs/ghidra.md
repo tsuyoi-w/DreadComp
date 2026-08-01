@@ -1,7 +1,7 @@
 # Ghidra setup
 
 [ghidra]: https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.2_build
-[switch]: https://github.com/borntohonk/Switch-Ghidra-Guides
+[switch]: https://github.com/borntohonk/Switch-Ghidra-Guides/blob/master/guides/Part1A-WindowsSetup.MD
 
 ## Install requirement
 

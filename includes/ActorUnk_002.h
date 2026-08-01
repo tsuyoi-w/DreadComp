@@ -5,6 +5,9 @@
 class ActorUnk_002 {
 public:
 
+    /* vtable 0x0 */
+    /* 0x08 */
+
     ActorUnk_002();
     ~ActorUnk_002();
 
@@ -18,4 +21,4 @@ public:
     virtual void vfunc_38(int);
     virtual void* vfunc_40(unsigned long, int, int);
     virtual void vfunc_48(long);
-};
+}; // SIZE 

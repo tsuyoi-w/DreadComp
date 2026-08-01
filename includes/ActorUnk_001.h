@@ -9,7 +9,7 @@ public:
     /* 0x20 */ int mUnk_20;
     /* 0x24 */ int mUnk_24;
 
-    ActorUnk_001(long param_2, ActorUnk_002* param_3, int param_4, int param_5);
+    ActorUnk_001(long, ActorUnk_002*, int, int);
     ActorUnk_001();
     ~ActorUnk_001();
     
