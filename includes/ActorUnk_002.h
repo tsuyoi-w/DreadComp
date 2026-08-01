@@ -2,11 +2,13 @@
 
 #include "nn/os.h"
 
+class ActorUnk_010;
+
 class ActorUnk_002 {
 public:
 
     /* vtable 0x0 */
-    /* 0x08 */
+    /* 0x08 */ ActorUnk_010* mUnk_08;
 
     ActorUnk_002();
     ~ActorUnk_002();
