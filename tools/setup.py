@@ -91,16 +91,22 @@ def main():
                     help="Disable original NSO setup")
     parser.add_argument("--clean", action="store_true",
                     help="Disable original NSO setup")
+    parser.add_argument("--clang", action="store_true",
+                        help="For github actions")
     args = parser.parse_args()
 
     if args.clean:
         clean()
 
-    # if not args.project_only:
-    #     prepare_executable(args.original_nso)
+    if args.clang:
+        set_up_compiler("9.0.0")
+        return
+
+    if not args.project_only:
+        prepare_executable(args.original_nso)
     set_up_compiler("9.0.0")
-    #  install_viking()
-    # create_build_dir()
+    install_viking()
+    create_build_dir()
     
 if __name__ == "__main__":
     main()

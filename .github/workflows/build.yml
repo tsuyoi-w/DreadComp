@@ -27,6 +27,8 @@ jobs:
         sudo apt install -y python3 ninja-build cmake ccache xdelta3 clang libssl-dev libncurses5
         pip install capstone colorama cxxfilt pyelftools watchdog python-Levenshtein toml
 
+    - name: install clang
+      run: tools/setup.py --clang
     - name: Build
       run: |
         python3 tools/build.py
