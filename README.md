@@ -1,10 +1,11 @@
 # Metroid Dread
 
-[Build Status]: #
-[actions]: #
-[Progress]: #
-[decomp.dev]: #
+ [![Decompilation Progress][progress-badge]][progress]
+
+[Progress]: https://decomp.dev/tsuyoi-w/DreadComp
+[progress-badge]: https://img.shields.io/badge/decompiled-0.02%-blue
 [discord]: discord.com/invite/vFmzAXR8FF
+[discord-badge]: https://img.shields.io/discord/774687602996936747?color=%237289DA&logo=discord&logoColor=%23FFFFFF
 
 **Work in progress!** This project aims to recreate source code for **_Metroid Dread_** by decompiling its code by hand. **The repository does not contain assets or assembly code.** To build the ROM, you must own an existing copy of the game to extract assets from. For more information join the [discord][discord].
 
