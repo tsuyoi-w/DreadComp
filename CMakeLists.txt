@@ -36,12 +36,15 @@ set(NN_SDK_TYPE "Release")
 
 add_subdirectory("lib/NintendoSDK")
 
-add_subdirectory("lib/agl")
-
 add_subdirectory("lib/sead")
 
-target_link_libraries(dread PRIVATE
+add_subdirectory("lib/agl")
+
+add_subdirectory("lib/eui")
+
+target_link_libraries(dread PUBLIC
     sead
     NintendoSDK
     agl
+    eui
 )
