@@ -1,6 +1,5 @@
 functions_csv = "data/function.csv"
 build_target = "dread"
-check_unimplemented_references = false
 
 [decomp_me]
 compiler_name = "clang-9.0.0"

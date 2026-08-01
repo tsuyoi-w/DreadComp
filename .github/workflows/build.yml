@@ -1,4 +1,4 @@
-name: Build and Update Progress
+name: Build
 
 on:
   push:

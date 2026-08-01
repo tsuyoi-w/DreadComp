@@ -23,12 +23,12 @@ import ghidra.program.util.DefinedDataIterator;
 
 public class getAllData extends GhidraScript {
 
-    final String fn_path = "\\\\wsl.localhost\\DreadComp\\home\\dreadcomp\\projects\\Metroid\\DreadComp\\data\\function.csv";
-    final String str_path = "\\\\wsl.localhost\\DreadComp\\home\\dreadcomp\\projects\\Metroid\\DreadComp\\data\\string.csv";
-    final String sym_path = "\\\\wsl.localhost\\DreadComp\\home\\dreadcomp\\projects\\Metroid\\DreadComp\\data\\symbol.csv";
+    final String fn_path = "D:/dev/C/Decomp/MetroidDread/DreadComp/data/function.csv";
+    final String str_path = "D:/dev/C/Decomp/MetroidDread/DreadComp/data/string.csv";
+    final String sym_path = "D:/dev/C/Decomp/MetroidDread/DreadComp/data/symbol.csv";
     Boolean fn = true;
     String fn_str = "Address,Quality,Size,Name\n";
-    Boolean str = true;
+    Boolean str = false;
     String str_str = "";
     Boolean sym = false;
     String sym_str = "";
@@ -41,7 +41,7 @@ public class getAllData extends GhidraScript {
         if (fn) {
             for (Function func : fnmngr.getFunctions(true)) {
                 if (func.isThunk() || func.isExternal()) {
-                    continue; // ou traiter différemment
+                    continue; 
                 }
                 AddressSetView body = func.getBody();
 

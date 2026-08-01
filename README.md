@@ -24,4 +24,4 @@ A work in progress, but [CONTRIBUTING.md](docs/Contributing.md) has guidelines f
 
 ## Documentation
 
-See [/docs](/docs) for documentation about the game.
+See [/docs](/docs) for documentation about the game decomp.
