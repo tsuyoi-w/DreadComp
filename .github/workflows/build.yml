@@ -1,0 +1,32 @@
+name: Build and Update Progress
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y python3 ninja-build cmake ccache xdelta3 clang libssl-dev libncurses5
+        pip install capstone colorama cxxfilt pyelftools watchdog python-Levenshtein toml
+
+    - name: Build
+      run: |
+        python3 tools/build.py
