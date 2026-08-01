@@ -50,7 +50,7 @@ def compute_measures(version: str | None = None) -> Measures:
 
 def build_report(version: str | None = None) -> Report:
     report = Report()
-    report.version = "2.1.0"
+    report.version = 210
     report.measures.CopyFrom(compute_measures(version))
     return report
 

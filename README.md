@@ -1,6 +1,6 @@
 # Metroid Dread
 
- [![Decompilation Progress][progress-badge]][progress]
+
 
 [Progress]: https://decomp.dev/tsuyoi-w/DreadComp
 [progress-badge]: https://img.shields.io/badge/decompiled-0.02%-blue
