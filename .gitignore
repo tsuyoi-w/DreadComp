@@ -20,8 +20,6 @@ Extract/*
 tools/check
 tools/decompme
 tools/listsym
-tools/makeClass.py
-tools/objdiff.py
 
 # IDEs
 .idea/
@@ -51,11 +49,10 @@ perf.data.old
 
 # Tooling
 /toolchain/clang*
-
-docs/build
+tools/makeClass.py
+tools/objdiff.py
 
 # Other
 Note.txt
 !Extract/*.md
-data/function_with_double.csv
 compile_commands.json
