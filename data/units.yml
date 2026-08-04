@@ -1,0 +1,66 @@
+ActorUnk_001:
+  ".text":
+    - offset: 0x0810CC
+      size: 132
+      label: _ZN12ActorUnk_001C1ElP12ActorUnk_002ii
+      status: NotMatching
+    - offset: 0x081150
+      size: 72
+      label: _ZN12ActorUnk_001D1Ev
+      status: NotMatching
+    - offset: 0x081198
+      size: 72
+      label: _ZN12ActorUnk_001D0Ev
+      status: NotMatching
+    - offset: 0x0811E0
+      size: 52
+      label: _ZN12ActorUnk_0018vfunc_18Ev
+      status: NotMatching
+    - offset: 0x081214
+      size: 100
+      label: _ZN12ActorUnk_0018vfunc_40Em
+      status: NotMatching
+    - offset: 0x081278
+      size: 16
+      label: _ZN12ActorUnk_0018vfunc_10Ev
+      status: Matching
+    - offset: 0x081288
+      size: 12
+      label: _ZN12ActorUnk_0018vfunc_20Ev
+      status: NotMatching
+    - offset: 0x081294
+      size: 8
+      label: _ZN12ActorUnk_0018vfunc_28Ev
+      status: Matching
+    - offset: 0x08129C
+      size: 8
+      label: _ZN12ActorUnk_0018vfunc_30Ev
+      status: Matching
+    - offset: 0x0812A4
+      size: 8
+      label: _ZN12ActorUnk_0018vfunc_38Ev
+      status: Matching
+ActorUnk_010:
+  ".text":
+    - offset: 0x081304
+      size: 36
+      label: _ZN12ActorUnk_010C1Ev
+      status: NotMatching
+ActorUnk_002:
+  ".text":
+    - offset: 0x082C38
+      size: 144
+      label: _ZN12ActorUnk_002C1Ev
+      status: NotMatching
+    - offset: 0x082CC8
+      size: 84
+      label: _ZN12ActorUnk_002D1Ev
+      status: NotMatching
+    - offset: 0x082D1C
+      size: 92
+      label: _ZN12ActorUnk_002D0Ev
+      status: NotMatching
+    - offset: 0x083368
+      size: 8
+      label: _ZN12ActorUnk_0028vfunc_58Ev
+      status: NotMatching

@@ -3,14 +3,6 @@
 
 extern ActorUnk_002* FUN_7100083990();
 
-ActorUnk_001::ActorUnk_001() {
-    if (this->mUnk_10 != 0) {
-        Actor_002->vfunc_48(this->mUnk_10);
-        this->mUnk_10 = 0;
-        this->mUnk_18 = 0;
-    }
-}
-
 ActorUnk_001::ActorUnk_001(long param_1, ActorUnk_002* param_2, int param_3, int param_4) {
     this->Actor_002 = param_2;
     this->mUnk_10 = 0;
@@ -33,33 +25,33 @@ ActorUnk_001::~ActorUnk_001() {
     operator delete(this);
 }
 
-bool ActorUnk_001::vfunc_00() {
+bool ActorUnk_001::vfunc_10() {
     return mUnk_10 != 0;
 }
 
-void ActorUnk_001::vfunc_08() {
+void ActorUnk_001::vfunc_18() {
     Actor_002->vfunc_48(this->mUnk_10);
     this->mUnk_10 = 0;
     this->mUnk_18 = 0;
 }
 
-void ActorUnk_001::vfunc_10() {
+void ActorUnk_001::vfunc_20() {
     *(int*)this = 3;
-}
-
-long ActorUnk_001::vfunc_18() {
-    return this->mUnk_10;
-}
-
-long ActorUnk_001::vfunc_20() {
-    return this->mUnk_18;
 }
 
 long ActorUnk_001::vfunc_28() {
     return this->mUnk_10;
 }
 
-void ActorUnk_001::vfunc_30(unsigned long param_1) {
+long ActorUnk_001::vfunc_30() {
+    return this->mUnk_18;
+}
+
+long ActorUnk_001::vfunc_38() {
+    return this->mUnk_10;
+}
+
+void ActorUnk_001::vfunc_40(unsigned long param_1) {
     void* _dest = Actor_002->vfunc_40(param_1, mUnk_20, mUnk_24);
     size_t __n = mUnk_18;
     if (param_1 <= mUnk_18) {
